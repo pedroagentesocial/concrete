@@ -4,14 +4,15 @@ import { serviceArea } from "../data/serviceArea";
 import { t, type Lang } from "../i18n";
 const { lang } = Astro.props as { lang: Lang };
 const year = new Date().getFullYear();
+const basePath = import.meta.env.BASE_URL;
 const navLinks = [
-  { href: `/${lang}/`, label: t(lang, "common.nav.home") },
-  { href: `/${lang}/products`, label: t(lang, "common.nav.products") },
-  { href: `/${lang}/services`, label: t(lang, "common.nav.services") },
-  { href: `/${lang}/projects`, label: t(lang, "common.nav.projects") },
-  { href: `/${lang}/resources`, label: t(lang, "common.nav.resources") },
-  { href: `/${lang}/about`, label: t(lang, "common.nav.about") },
-  { href: `/${lang}/contact`, label: t(lang, "common.nav.contact") }
+  { href: `${basePath}${lang}/`, label: t(lang, "common.nav.home") },
+  { href: `${basePath}${lang}/products`, label: t(lang, "common.nav.products") },
+  { href: `${basePath}${lang}/services`, label: t(lang, "common.nav.services") },
+  { href: `${basePath}${lang}/projects`, label: t(lang, "common.nav.projects") },
+  { href: `${basePath}${lang}/resources`, label: t(lang, "common.nav.resources") },
+  { href: `${basePath}${lang}/about`, label: t(lang, "common.nav.about") },
+  { href: `${basePath}${lang}/contact`, label: t(lang, "common.nav.contact") }
 ];
 const areaNames = serviceArea.areas.slice(0, 5).map((key) => t(lang, key));
 ---
@@ -39,7 +40,7 @@ const areaNames = serviceArea.areas.slice(0, 5).map((key) => t(lang, key));
           <li><span class="font-semibold text-text">{t(lang, "footer.labels.hours")}:</span> <span class="text-muted">{t(lang, "home.contact.hours")}</span></li>
         </ul>
         <div class="pt-1">
-          <Button client:load onClick={() => (window.location.href = `/${lang}/contact`)} variant="primary">
+          <Button client:load onClick={() => (window.location.href = `${basePath}${lang}/contact`)} variant="primary">
             {t(lang, "home.hero.primaryCta") as any}
           </Button>
         </div>

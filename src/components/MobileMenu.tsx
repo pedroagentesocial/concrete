@@ -78,18 +78,19 @@ export default function MobileMenu({ lang }: MobileMenuProps) {
     return () => document.removeEventListener("keydown", onKey);
   }, [open]);
 
+  const basePath = import.meta.env.BASE_URL;
   const links = [
-    { href: `/${lang}/`, label: t(lang, "common.nav.home") },
-    { href: `/${lang}/products`, label: t(lang, "common.nav.products") },
-    { href: `/${lang}/services`, label: t(lang, "common.nav.services") },
-    { href: `/${lang}/projects`, label: t(lang, "common.nav.projects") },
-    { href: `/${lang}/resources`, label: t(lang, "common.nav.resources") },
-    { href: `/${lang}/about`, label: t(lang, "common.nav.about") },
-    { href: `/${lang}/contact`, label: t(lang, "common.nav.contact") },
+    { href: `${basePath}${lang}/`, label: t(lang, "common.nav.home") },
+    { href: `${basePath}${lang}/products`, label: t(lang, "common.nav.products") },
+    { href: `${basePath}${lang}/services`, label: t(lang, "common.nav.services") },
+    { href: `${basePath}${lang}/projects`, label: t(lang, "common.nav.projects") },
+    { href: `${basePath}${lang}/resources`, label: t(lang, "common.nav.resources") },
+    { href: `${basePath}${lang}/about`, label: t(lang, "common.nav.about") },
+    { href: `${basePath}${lang}/contact`, label: t(lang, "common.nav.contact") },
   ];
 
   const isActive = (href: string) => {
-    if (href.endsWith(`/${lang}/`)) return pathname === `/${lang}/`;
+    if (href.endsWith(`${lang}/`)) return pathname === `${basePath}${lang}/`;
     return pathname === href || pathname.startsWith(href + "/");
   };
 

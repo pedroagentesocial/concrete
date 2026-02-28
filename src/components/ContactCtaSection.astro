@@ -23,7 +23,7 @@ const info = contactInfo;
             <Button client:load onClick={() => (window.location.href = info.phoneHref)} variant="primary" className="h-12 px-6">
               {t(lang, "home.contactCta.primaryCta") as any}
             </Button>
-            <Button client:load onClick={() => (window.location.href = `/${lang}/contact`)} variant="secondary" className="h-12 px-6">
+            <Button client:load onClick={() => (window.location.href = `${import.meta.env.BASE_URL}${lang}/contact`)} variant="secondary" className="h-12 px-6">
               {t(lang, "home.contactCta.secondaryCta") as any}
             </Button>
           </div>

@@ -42,7 +42,7 @@ const gridItems = rest.slice(0, 3);
         ))}
       </ul>
       <div class="mt-6">
-        <Button client:load onClick={() => (window.location.href = `/${lang}/products#${feature.id}`)} variant="primary">
+        <Button client:load onClick={() => (window.location.href = `${import.meta.env.BASE_URL}${lang}/products#${feature.id}`)} variant="primary">
           {t(lang, "home.productsOverview.learnMore") as any}
         </Button>
       </div>
@@ -73,7 +73,7 @@ const gridItems = rest.slice(0, 3);
               <li>{t(lang, key)}</li>
             ))}
           </ul>
-          <a class="mt-4 inline-flex text-sm font-semibold text-brand hover:text-brand/80" href={`/${lang}/products#${item.id}`}>
+          <a class="mt-4 inline-flex text-sm font-semibold text-brand hover:text-brand/80" href={`${import.meta.env.BASE_URL}${lang}/products#${item.id}`}>
             {t(lang, "home.productsOverview.learnMore")}
           </a>
         </article>
