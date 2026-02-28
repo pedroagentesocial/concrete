@@ -1,3 +1,5 @@
+import { withBase } from "../utils/withBase";
+
 export type ProductSection = {
   id: string;
   titleKey: string;
@@ -25,7 +27,7 @@ export const productSections: ProductSection[] = [
       "pages.products.sections.cement.highlights.two",
       "pages.products.sections.cement.highlights.three"
     ],
-    imageSrc: "/images/cement.jpg",
+    imageSrc: withBase("/images/cement.jpg"),
     imageAltKey: "pages.products.images.cementAlt",
     ctaKey: "pages.products.sectionCta",
     ctaHref: "/contact",
@@ -48,7 +50,7 @@ export const productSections: ProductSection[] = [
       "pages.products.sections.readyMix.highlights.two",
       "pages.products.sections.readyMix.highlights.three"
     ],
-    imageSrc: "/images/mix-concrete.jpg",
+    imageSrc: withBase("/images/mix-concrete.jpg"),
     imageAltKey: "pages.products.images.readyMixAlt",
     ctaKey: "pages.products.sectionCta",
     ctaHref: "/contact"
@@ -63,7 +65,7 @@ export const productSections: ProductSection[] = [
       "pages.products.sections.aggregates.highlights.two",
       "pages.products.sections.aggregates.highlights.three"
     ],
-    imageSrc: "/images/aggregates.jpg",
+    imageSrc: withBase("/images/aggregates.jpg"),
     imageAltKey: "pages.products.images.aggregatesAlt",
     ctaKey: "pages.products.sectionCta",
     ctaHref: "/contact"
@@ -78,7 +80,7 @@ export const productSections: ProductSection[] = [
       "pages.products.sections.delivery.highlights.two",
       "pages.products.sections.delivery.highlights.three"
     ],
-    imageSrc: "/images/delivery.jpg",
+    imageSrc: withBase("/images/delivery.jpg"),
     imageAltKey: "pages.products.images.deliveryAlt",
     ctaKey: "pages.products.sectionCta",
     ctaHref: "/contact"

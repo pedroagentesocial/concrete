@@ -25,7 +25,10 @@ const alternateUrl = new URL(`/es/services`, Astro.url).toString();
     <div class="space-y-12">
       {services.map((svc, idx) => {
         const bullets = svc.bulletsKey ? (t(lang, svc.bulletsKey) as any[]) : null;
-        const imageSrcs = ["/images/services-1.jpg", "/images/services-2.jpg"];
+        const imageSrcs = [
+          `${import.meta.env.BASE_URL}images/services-1.jpg`,
+          `${import.meta.env.BASE_URL}images/services-2.jpg`
+        ];
         const imageSrc = imageSrcs[idx % imageSrcs.length];
         const altKey =
           svc.id === "delivery"

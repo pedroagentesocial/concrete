@@ -107,13 +107,13 @@ const HeroVideoSlider = ({ lang }: Props) => {
                     </p>
                     <div className="mt-6 flex flex-wrap gap-3">
                       <a
-                        href={`/${lang}${slide.ctaPrimaryHref}`}
+                        href={`${import.meta.env.BASE_URL}${lang}${slide.ctaPrimaryHref}`}
                         className="group relative overflow-hidden inline-flex items-center justify-center h-11 px-5 rounded-2xl text-sm font-semibold text-white bg-primary transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.01] active:translate-y-0 active:scale-[0.99] hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
                       >
                         {t<string>(lang, slide.ctaPrimaryKey)}
                       </a>
                       <a
-                        href={`/${lang}${slide.ctaSecondaryHref}`}
+                        href={`${import.meta.env.BASE_URL}${lang}${slide.ctaSecondaryHref}`}
                         className="group relative overflow-hidden inline-flex items-center justify-center h-11 px-5 rounded-2xl text-sm font-semibold text-white bg-secondary transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.01] active:translate-y-0 active:scale-[0.99] hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
                       >
                         {t<string>(lang, slide.ctaSecondaryKey)}

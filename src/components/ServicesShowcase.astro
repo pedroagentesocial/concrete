@@ -26,9 +26,9 @@ const { lang } = Astro.props as { lang: Lang };
 
     <div class="relative rounded-2xl overflow-hidden border border-muted lg:col-start-2 lg:row-start-1 lg:row-span-2 h-full min-h-[400px] lg:min-h-[480px] order-first lg:order-none">
       <picture>
-        <source srcset="/images/worker.jpg" type="image/jpeg" />
+        <source srcset={`${import.meta.env.BASE_URL}images/worker.jpg`} type="image/jpeg" />
         <img
-          src="/images/worker.jpg"
+          src={`${import.meta.env.BASE_URL}images/worker.jpg`}
           alt={t(lang, "home.services.images.heroAlt")}
           loading="lazy"
           class="h-full w-full object-cover"

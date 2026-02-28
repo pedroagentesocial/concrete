@@ -1,3 +1,5 @@
+import { withBase } from "../utils/withBase";
+
 export type ProductItem = {
   id: string;
   titleKey: string;
@@ -19,7 +21,7 @@ export const products: ProductItem[] = [
       "home.productsOverview.highlights.cement.two",
       "home.productsOverview.highlights.cement.three"
     ],
-    imageSrc: "/images/cement.jpg",
+    imageSrc: withBase("/images/cement.jpg"),
     imageAltKey: "home.productsOverview.images.cementAlt",
     href: "/en/products#cement",
     badgeKey: "home.productsOverview.badges.cement"
@@ -33,7 +35,7 @@ export const products: ProductItem[] = [
       "home.productsOverview.highlights.readyMix.two",
       "home.productsOverview.highlights.readyMix.three"
     ],
-    imageSrc: "/images/mix-concrete.jpg",
+    imageSrc: withBase("/images/mix-concrete.jpg"),
     imageAltKey: "home.productsOverview.images.readyMixAlt",
     href: "/en/products#ready-mix",
     badgeKey: "home.productsOverview.badges.readyMix"
@@ -47,7 +49,7 @@ export const products: ProductItem[] = [
       "home.productsOverview.highlights.aggregates.two",
       "home.productsOverview.highlights.aggregates.three"
     ],
-    imageSrc: "/images/aggregates.jpg",
+    imageSrc: withBase("/images/aggregates.jpg"),
     imageAltKey: "home.productsOverview.images.aggregatesAlt",
     href: "/en/products#aggregates"
   },
@@ -60,7 +62,7 @@ export const products: ProductItem[] = [
       "home.productsOverview.highlights.delivery.two",
       "home.productsOverview.highlights.delivery.three"
     ],
-    imageSrc: "/images/delivery.jpg",
+    imageSrc: withBase("/images/delivery.jpg"),
     imageAltKey: "home.productsOverview.images.deliveryAlt",
     href: "/en/products#delivery",
     badgeKey: "home.productsOverview.badges.delivery"

@@ -1,3 +1,5 @@
+import { withBase } from "../utils/withBase";
+
 export type ServiceArea = {
   hq: {
     name: string;
@@ -24,7 +26,7 @@ export const serviceArea: ServiceArea = {
     emailHref: "mailto:sales@wasatchcement.com",
     hoursKey: "home.serviceArea.hours.standard",
     mapHref: "https://maps.google.com/?q=1250%20N%20200%20W%2C%20Salt%20Lake%20City%2C%20UT",
-    imageSrc: "/images/locations-1.jpg",
+    imageSrc: withBase("/images/locations-1.jpg"),
     imageAltKey: "home.serviceArea.images.mainAlt"
   },
   areas: [
