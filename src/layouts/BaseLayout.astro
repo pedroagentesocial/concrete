@@ -26,7 +26,7 @@ const {
 const siteName = "Wasatch Cement & Concrete Supply";
 const pageTitle = title ? `${title} | ${siteName}` : siteName;
 const metaDescription = description ?? "Utah-ready concrete and cement supply with reliable logistics, mix expertise, and jobsite support.";
-const image = ogImage ?? "/og-default.png";
+const image = ogImage ?? `${import.meta.env.BASE_URL}og-default.png`;
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -42,7 +42,7 @@ const jsonLd = {
     "addressCountry": "US"
   },
   "telephone": "+1-801-555-0148",
-  "url": canonical ?? Astro.url.toString(),
+  "url": canonical ?? new URL(import.meta.env.BASE_URL, Astro.url).toString(),
   "openingHours": "Mo-Sa 06:00-18:00"
 };
 ---
