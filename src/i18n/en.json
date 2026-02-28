@@ -1,0 +1,878 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "products": "Products",
+      "services": "Services",
+      "projects": "Projects",
+      "resources": "Resources",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "a11y": {
+      "openNav": "Open navigation",
+      "closeNav": "Close navigation",
+      "switchToEnglish": "Switch language to English",
+      "switchToSpanish": "Switch language to Spanish",
+      "prevSlide": "Previous slide",
+      "nextSlide": "Next slide",
+      "goToSlide": "Go to slide {{index}}",
+      "visitLinkedIn": "Visit our LinkedIn",
+      "visitFacebook": "Visit our Facebook",
+      "visitInstagram": "Visit our Instagram",
+      "visitX": "Visit our X profile"
+    },
+    "switchToEn": "Switch to English",
+    "switchToEs": "Cambiar a Español",
+    "close": "Close",
+    "footer": {
+      "tagline": "Concrete supply partner for Utah’s builders.",
+      "legal": "© 2026 Wasatch Cement & Concrete Supply. All rights reserved."
+    }
+  },
+  "meta": {
+    "title": "Utah Concrete Supply Partner",
+    "description": "Wasatch Cement & Concrete Supply delivers dependable mixes, on-time logistics, and jobsite-ready expertise across Utah."
+  },
+  "home": {
+    "heroSlides": {
+      "slide1": {
+        "title": "Concrete for Utah jobsites",
+        "subtitle": "Strength-verified mixes with responsive dispatch.",
+        "primaryCta": "Call now",
+        "secondaryCta": "View services"
+      },
+      "slide2": {
+        "title": "On-time delivery coordination",
+        "subtitle": "Scheduling and logistics that keep crews moving.",
+        "primaryCta": "Explore products",
+        "secondaryCta": "See projects"
+      },
+      "slide3": {
+        "title": "Paving and infrastructure mixes",
+        "subtitle": "Durability and finish for Utah conditions.",
+        "primaryCta": "View resources",
+        "secondaryCta": "Contact us"
+      }
+    },
+    "productsOverview": {
+      "title": "Products built for performance",
+      "subtitle": "Structured mixes, reliable materials, and scheduling support for every pour.",
+      "learnMore": "Learn more",
+      "badges": {
+        "cement": "ASTM",
+        "readyMix": "Most requested",
+        "delivery": "Scheduling"
+      },
+      "items": {
+        "cement": {
+          "title": "Cement",
+          "desc": "ASTM C150 Type I/II and Type V options for structural and specialty needs."
+        },
+        "readyMix": {
+          "title": "Ready-mix concrete",
+          "desc": "Mix designs tuned for strength, finish, and placement cycles."
+        },
+        "aggregates": {
+          "title": "Aggregates",
+          "desc": "Consistent gradations for pumpability, finish, and durability."
+        },
+        "delivery": {
+          "title": "Delivery & scheduling",
+          "desc": "Dispatch planning, sequencing, and updates that keep crews on time."
+        }
+      },
+      "highlights": {
+        "cement": {
+          "one": "ASTM category coverage",
+          "two": "Mill certifications available",
+          "three": "Reliable local supply"
+        },
+        "readyMix": {
+          "one": "Strength targets by spec",
+          "two": "Admixture guidance",
+          "three": "Placement-ready mixes"
+        },
+        "aggregates": {
+          "one": "Washed and crushed options",
+          "two": "Consistent sizing",
+          "three": "On-time replenishment"
+        },
+        "delivery": {
+          "one": "2-hour pour windows",
+          "two": "Live schedule updates",
+          "three": "Sequenced truck timing"
+        }
+      },
+      "images": {
+        "cementAlt": "Cement silos and batching equipment",
+        "readyMixAlt": "Ready-mix truck at an active pour",
+        "aggregatesAlt": "Aggregate stockpiles at a plant",
+        "deliveryAlt": "Dispatch planning and scheduling coordination"
+      },
+      "disclaimer": "Availability depends on project requirements."
+    },
+    "whyUs": {
+      "title": "Why builders choose us",
+      "subtitle": "Clear scheduling, spec-driven quality, and local support that keeps pours on track.",
+      "trustStrip": [
+        { "title": "Delivery windows", "value": "2-hour pour windows" },
+        { "title": "Spec compliance", "value": "ASTM-aligned batching" },
+        { "title": "Jobsite support", "value": "On-site coordination" }
+      ],
+      "items": {
+        "reliableScheduling": {
+          "title": "Reliable scheduling",
+          "desc": "Dispatch windows confirmed with proactive updates when conditions shift.",
+          "metricValue": "98%",
+          "metricLabel": "On-time delivery rate"
+        },
+        "specQuality": {
+          "title": "Spec-driven quality control",
+          "desc": "Batching aligned to ASTM requirements with documented QC checks.",
+          "metricValue": "ASTM C94",
+          "metricLabel": "Ready-mix compliance"
+        },
+        "localLogistics": {
+          "title": "Local Utah logistics",
+          "desc": "Local fleet and plant coverage reduces lead times across the Wasatch Front.",
+          "metricValue": "15 min",
+          "metricLabel": "Average dispatch response"
+        },
+        "jobsiteSupport": {
+          "title": "Jobsite support",
+          "desc": "Placement guidance and coordination for access, pumping, and finish requirements."
+        },
+        "safetyFirst": {
+          "title": "Safety-first operations",
+          "desc": "Site-ready protocols for cold, hot, and high-traffic pours."
+        },
+        "clearCommunication": {
+          "title": "Transparent communication",
+          "desc": "Clear quotes, live updates, and a single point of contact."
+        }
+      }
+    },
+    "locations": {
+      "title": "Service area",
+      "subtitle": "One main yard in Utah. Fast delivery across the Wasatch Front and nearby regions.",
+      "cta": "Get directions",
+      "ctaCall": "Call",
+      "ctaDirections": "Directions",
+      "labels": {
+        "serviceArea": "Service area",
+        "address": "Address",
+        "call": "Call",
+        "hours": "Hours",
+        "coverage": "Coverage"
+      },
+      "hours": {
+        "standard": "Mon–Sat · 6:00 AM – 6:00 PM"
+      },
+      "main": {
+        "name": "Salt Lake City main yard",
+        "serviceArea": "Central dispatch and same-day delivery coordination.",
+        "address": "1250 N 200 W, Salt Lake City, UT",
+        "phone": "(801) 555-0148"
+      },
+      "areas": [
+        "Salt Lake County",
+        "Utah County",
+        "Davis County",
+        "Weber County",
+        "Tooele County",
+        "Summit County"
+      ],
+      "images": {
+        "mainAlt": "Main yard and dispatch in Salt Lake City"
+      }
+    },
+    "serviceArea": {
+      "title": "Service area",
+      "subtitle": "One main yard in Utah. Fast delivery across the Wasatch Front and nearby regions.",
+      "ctaCall": "Call dispatch",
+      "ctaDirections": "Get directions",
+      "labels": {
+        "mainYard": "Main yard",
+        "address": "Address",
+        "call": "Call dispatch",
+        "email": "Email sales",
+        "hours": "Hours",
+        "serviceAreas": "Service areas"
+      },
+      "hours": {
+        "standard": "Mon–Sat · 6:00 AM – 6:00 PM"
+      },
+      "hq": {
+        "name": "Main Yard / Dispatch",
+        "serviceArea": "Central dispatch and same-day delivery coordination.",
+        "address": "1250 N 200 W, Salt Lake City, UT",
+        "phone": "(801) 555-0148",
+        "email": "sales@wasatchcement.com"
+      },
+      "areas": {
+        "saltLakeCity": "Salt Lake City",
+        "westValleyCity": "West Valley City",
+        "sandy": "Sandy",
+        "draper": "Draper",
+        "lehi": "Lehi",
+        "orem": "Orem",
+        "provo": "Provo",
+        "ogden": "Ogden",
+        "layton": "Layton",
+        "bountiful": "Bountiful",
+        "tooele": "Tooele",
+        "parkCity": "Park City"
+      },
+      "images": {
+        "mainAlt": "Main yard and dispatch in Salt Lake City"
+      }
+    },
+    "ctaBand": {
+      "title": "Talk to a concrete specialist today",
+      "subtitle": "Get fast answers on mixes, scheduling, and jobsite coordination.",
+      "cta": "Request a quote"
+    },
+    "contactCta": {
+      "headline": "Call now to plan your next pour",
+      "body": "Speak with dispatch for mix recommendations, availability, and on‑site coordination.",
+      "trustLine": "Fast scheduling. Clear pricing. Local support.",
+      "primaryCta": "Call Now",
+      "secondaryCta": "Request a Quote"
+    },
+    "hero": {
+      "title": "Concrete you can schedule with confidence across Utah.",
+      "subtitle": "Wasatch Cement & Concrete Supply partners with builders, contractors, and municipalities to deliver consistent mixes, responsive dispatch, and on-site support.",
+      "primaryCta": "Request a quote",
+      "secondaryCta": "View services",
+      "trustLine": "Batching, logistics, and jobsite coordination built for Utah conditions."
+    },
+    "stats": [
+      { "value": "24/7", "label": "Dispatch and weekend pour coordination" },
+      { "value": "40+", "label": "Mix designs for structural, paving, and specialty work" },
+      { "value": "15 min", "label": "Average response time for schedule updates" }
+    ],
+    "services": {
+      "title": "Ready-to-pour services that keep crews moving",
+      "subtitle": "From mix design to delivery sequencing, every step is built for reliability.",
+      "items": [
+        {
+          "title": "Ready-mix concrete supply",
+          "description": "Strength-verified mixes with moisture monitoring and QC reporting."
+        },
+        {
+          "title": "Cement and aggregate distribution",
+          "description": "Stable material sourcing with flexible delivery windows."
+        },
+        {
+          "title": "Pump and placement coordination",
+          "description": "Crew-ready logistics, pour planning, and on-site alignment."
+        },
+        {
+          "title": "Cold and hot weather batching",
+          "description": "Seasonal admixtures and temperature control for consistent cures."
+        }
+      ],
+      "imageLabel": "Jobsite-ready logistics",
+      "images": {
+        "heroAlt": "Concrete crew on site with coordinated delivery"
+      },
+      "cards": {
+        "delivery": {
+          "title": "Dispatch & delivery",
+          "desc": "Coordinated windows, route planning, and responsive updates.",
+          "bullets": [
+            "Sequenced truck timing",
+            "Live schedule adjustments"
+          ]
+        },
+        "mixDesign": {
+          "title": "Mix design guidance",
+          "desc": "Strength targets, admixtures, and finish goals aligned to spec.",
+          "bullets": [
+            "Submittals and QC coordination",
+            "Admixture recommendations"
+          ]
+        },
+        "onSiteSupport": {
+          "title": "On‑site support",
+          "desc": "Alignment with crews for placement, access, and adjustments."
+        },
+        "quality": {
+          "title": "Quality & testing",
+          "desc": "Consistent batching with slump, air, and strength verification.",
+          "bullets": [
+            "Moisture monitoring",
+            "Compressive breaks tracking"
+          ]
+        }
+      }
+    },
+    "industries": {
+      "title": "Built for Utah’s most demanding pours",
+      "items": [
+        "Commercial and mixed-use developments",
+        "Transportation, paving, and infrastructure",
+        "Residential subdivisions and multi-family",
+        "Industrial facilities and logistics centers",
+        "Municipal and public works projects"
+      ]
+    },
+    "process": {
+      "title": "A predictable delivery process",
+      "steps": [
+        {
+          "title": "Scope and mix alignment",
+          "description": "Review structural goals, schedules, and finish requirements."
+        },
+        {
+          "title": "Production planning",
+          "description": "Lock in batching windows and verify truck sequencing."
+        },
+        {
+          "title": "Pour day coordination",
+          "description": "Live dispatch updates with on-site adjustments as needed."
+        },
+        {
+          "title": "Post-pour follow-up",
+          "description": "Confirm reports, strength data, and next-phase requirements."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Capabilities for every phase",
+      "viewDetails": "View details",
+      "items": [
+        { "title": "Foundations and slabs", "detail": "Structural pours with tight tolerances." },
+        { "title": "Paving and flatwork", "detail": "Finishes calibrated for durability and slip resistance." },
+        { "title": "Tilt-up and precast", "detail": "High-strength mixes with rapid placement cycles." }
+      ]
+    },
+    "testimonials": {
+      "title": "Trusted by Utah teams",
+      "subtitle": "Feedback from crews across the Wasatch Front.",
+      "disclaimer": "Sample testimonials for demo purposes.",
+      "items": [
+        {
+          "quote": "Wasatch keeps our pours on schedule with real-time updates and consistent strengths.",
+          "name": "Jordan Blake",
+          "role": "Project Superintendent"
+        },
+        {
+          "quote": "They show up ready with the right mix and keep our crews moving.",
+          "name": "Elena Ortiz",
+          "role": "Commercial Contractor"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Talk to a Utah concrete specialist",
+      "address": "1250 N 200 W, Salt Lake City, UT",
+      "phone": "(801) 555-0148",
+      "email": "dispatch@wasatchcement.com",
+      "hours": "Mon–Sat · 6:00 AM – 6:00 PM",
+      "note": "Emergency pours and weekend scheduling available.",
+      "cta": "Get directions"
+    },
+    "form": {
+      "title": "Start a quote request",
+      "fields": {
+        "name": "Full name",
+        "company": "Company",
+        "email": "Email",
+        "phone": "Phone",
+        "service": "Service focus",
+        "message": "Project details"
+      },
+      "placeholders": {
+        "name": "Jordan Blake",
+        "company": "Wasatch Builders",
+        "email": "jordan@example.com",
+        "phone": "(801) 555-0123",
+        "service": "Ready-mix concrete",
+        "message": "Tell us about pour dates, volume, and site access."
+      },
+      "services": ["Ready-mix supply", "Cement delivery", "Aggregate supply", "Placement support"],
+      "submit": "Send request",
+      "success": "Thanks. A concrete specialist will reach out shortly.",
+      "error": "Please complete all required fields."
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Wasatch Cement & Concrete Supply",
+      "value": "Dependable concrete supply and jobsite-ready support.",
+      "serviceArea": "Serving Utah"
+    },
+    "navHeader": "Navigation",
+    "contactHeader": "Contact",
+    "locationsHeader": "Service areas",
+    "labels": {
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "hours": "Hours",
+      "followUs": "Follow us",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "copyright": "© {{year}} Wasatch Cement & Concrete Supply. All rights reserved."
+  },
+  "pages": {
+    "products": {
+      "title": "Products",
+      "intro": "Explore our cement, aggregates, and admixtures built for Utah conditions.",
+      "hero": {
+        "title": "Products built for Utah pours",
+        "subtitle": "ASTM-aligned cement, spec-driven ready-mix, reliable aggregates, and coordinated delivery.",
+        "primaryCta": "Call now",
+        "secondaryCta": "Delivery details"
+      },
+      "navTitle": "On this page",
+      "nav": {
+        "cement": "Cement",
+        "readyMix": "Ready-mix concrete",
+        "aggregates": "Aggregates",
+        "delivery": "Delivery & scheduling"
+      },
+      "deliveryDetailsCta": "Delivery details",
+      "sectionCta": "Contact sales",
+      "sections": {
+        "cement": {
+          "title": "Cement",
+          "subtitle": "ASTM categories and dependable supply for structural mixes.",
+          "desc": "Type I/II and Type V cement with documentation available for submittals and specs.",
+          "highlights": {
+            "one": "ASTM C150 coverage for common structural needs",
+            "two": "Mill certifications and batch records on request",
+            "three": "Local supply with consistent availability"
+          },
+          "specs": {
+            "title": "Specs at a glance",
+            "one": "ASTM C150 Type I/II and Type V",
+            "two": "Typical Blaine fineness 360–420 m²/kg",
+            "three": "Low-alkali options upon request"
+          }
+        },
+        "readyMix": {
+          "title": "Ready-mix concrete",
+          "subtitle": "Mix designs tuned for placement, finish, and durability.",
+          "desc": "Strength targets and admixture guidance aligned to your pour schedule.",
+          "highlights": {
+            "one": "Project-specific mix designs by spec",
+            "two": "Admixture support for cold, hot, and rapid set",
+            "three": "Placement-ready batches with verified QC"
+          }
+        },
+        "aggregates": {
+          "title": "Aggregates",
+          "subtitle": "Consistent gradations for pumpability and finish.",
+          "desc": "Washed and crushed options with dependable sizing and replenishment.",
+          "highlights": {
+            "one": "Washed and crushed options by application",
+            "two": "Consistent sizing for finishing and durability",
+            "three": "Reliable supply aligned to delivery windows"
+          }
+        },
+        "delivery": {
+          "title": "Delivery & scheduling",
+          "subtitle": "Dispatch coordination to keep crews moving.",
+          "desc": "Sequenced truck timing, live updates, and jobsite communication.",
+          "highlights": {
+            "one": "Two-hour pour windows and schedule confirmation",
+            "two": "Real-time dispatch updates when conditions shift",
+            "three": "Single point of contact for jobsite coordination"
+          }
+        }
+      },
+      "deliveryDetails": {
+        "title": "Delivery details",
+        "subtitle": "Planning guidance for scheduling, site access, and on-site coordination.",
+        "sections": {
+          "scheduling": {
+            "title": "Scheduling",
+            "items": [
+              "Provide lead time based on project size and mix requirements.",
+              "Confirm the delivery window before pour day.",
+              "Dispatch may call or text if conditions change."
+            ]
+          },
+          "access": {
+            "title": "Access",
+            "items": [
+              "Keep driveways and access routes clear for truck arrival.",
+              "Confirm turning radius, gate codes, and site entry details.",
+              "Maintain overhead clearance for chutes and lines."
+            ]
+          },
+          "unloading": {
+            "title": "Unloading",
+            "items": [
+              "Confirm where the truck can safely stage and pour.",
+              "Customer is responsible for site readiness and access.",
+              "Crew coordination is required for safe discharge."
+            ]
+          },
+          "sitePrep": {
+            "title": "Site preparation",
+            "items": [
+              "Subgrade, forms, and reinforcement should be ready before arrival.",
+              "Verify elevations and placement areas in advance.",
+              "Use caution around power lines and overhead hazards."
+            ]
+          },
+          "cancellations": {
+            "title": "Cancellations",
+            "items": [
+              "Notify dispatch as early as possible if plans change.",
+              "Late changes may affect availability for the scheduled window.",
+              "Fees may apply for short-notice cancellations."
+            ]
+          }
+        },
+        "disclaimer": "Details may vary by project and availability."
+      },
+      "images": {
+        "cementAlt": "Cement silos and material handling",
+        "readyMixAlt": "Ready-mix pour at an active site",
+        "aggregatesAlt": "Aggregate stockpiles and conveyor belts",
+        "deliveryAlt": "Concrete delivery truck at a jobsite"
+      },
+      "cement": {
+        "title": "Cement",
+        "desc": "Options that include ASTM C150 Type I/II and ASTM C150 Type V."
+      },
+      "readyMix": {
+        "title": "Ready-mix concrete",
+        "desc": "Mixes tuned for placement cycles, strength, and finish."
+      },
+      "aggregates": {
+        "title": "Aggregates",
+        "desc": "Gradations that support consistent finishing and durability."
+      },
+      "disclaimer": "Availability depends on project requirements."
+    },
+    "services": {
+      "title": "Services",
+      "intro": "Mix design, dispatch, placement coordination, and quality control."
+    },
+    "servicesPage": {
+      "images": {
+        "deliveryAlt": "Concrete truck dispatch and delivery coordination",
+        "mixDesignAlt": "Engineer reviewing concrete mix design and submittals",
+        "onSiteSupportAlt": "On-site support coordinating placement with crew",
+        "qualityAlt": "Quality control testing for slump, air, and strength"
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "intro": "A sample of capabilities across structural, paving, and specialty work."
+    },
+    "resources": {
+      "title": "Resources",
+      "intro": "Guides and specifications to help plan successful pours."
+    },
+    "about": {
+      "title": "About",
+      "intro": "Local team focused on reliability, communication, and safety.",
+      "hero": {
+        "title": "Built to support Utah pours with clarity and consistency.",
+        "subtitle": "Wasatch Cement & Concrete Supply partners with contractors and builders to align specs, scheduling, and jobsite coordination.",
+        "primaryCta": "Call dispatch",
+        "secondaryCta": "View products",
+        "trustLine": "Dispatch support, spec guidance, and jobsite-ready coordination."
+      },
+      "story": {
+        "title": "Our story",
+        "subtitle": "A local operation shaped around dependable delivery and responsive support.",
+        "items": [
+          {
+            "title": "Built local operations",
+            "description": "Established a Utah-first footprint to serve jobsite needs with fast response times."
+          },
+          {
+            "title": "Expanded delivery capability",
+            "description": "Scaled fleet coordination to handle sequenced pours and changing jobsite conditions."
+          },
+          {
+            "title": "Strengthened mix guidance",
+            "description": "Added spec-driven support to align batching, placement, and finish requirements."
+          },
+          {
+            "title": "Deepened jobsite coordination",
+            "description": "Refined communication and on-site collaboration for smoother pours."
+          }
+        ]
+      },
+      "timeline": {
+        "localOperations": {
+          "title": "Built local operations",
+          "body": "Established a Utah-first footprint to serve jobsite needs with fast response times."
+        },
+        "deliveryCapability": {
+          "title": "Expanded delivery capability",
+          "body": "Scaled fleet coordination to handle sequenced pours and changing jobsite conditions."
+        },
+        "mixGuidance": {
+          "title": "Strengthened mix guidance",
+          "body": "Added spec-driven support to align batching, placement, and finish requirements."
+        },
+        "jobsiteCoordination": {
+          "title": "Deepened jobsite coordination",
+          "body": "Refined communication and on-site collaboration for smoother pours."
+        }
+      },
+      "capabilities": {
+        "title": "What we do",
+        "subtitle": "Concrete supply and coordination built around predictable outcomes.",
+        "items": [
+          {
+            "title": "Delivery scheduling",
+            "description": "Confirmed windows, route planning, and proactive updates when schedules shift."
+          },
+          {
+            "title": "Ready-mix support",
+            "description": "Spec-aligned mix guidance for strength targets, placement, and finish."
+          },
+          {
+            "title": "Aggregates supply",
+            "description": "Consistent gradations and replenishment to keep pours moving."
+          },
+          {
+            "title": "Jobsite coordination",
+            "description": "Access planning, staging alignment, and on-site communication."
+          }
+        ]
+      },
+      "capabilityItems": {
+        "delivery": {
+          "title": "Delivery scheduling",
+          "body": "Confirmed windows, route planning, and proactive updates when schedules shift."
+        },
+        "readyMix": {
+          "title": "Ready-mix support",
+          "body": "Spec-aligned mix guidance for strength targets, placement, and finish."
+        },
+        "aggregates": {
+          "title": "Aggregates supply",
+          "body": "Consistent gradations and replenishment to keep pours moving."
+        },
+        "coordination": {
+          "title": "Jobsite coordination",
+          "body": "Access planning, staging alignment, and on-site communication."
+        }
+      },
+      "process": {
+        "title": "How we work",
+        "subtitle": "A clear sequence that keeps crews aligned from request to pour.",
+        "steps": [
+          {
+            "title": "Request",
+            "description": "Share scope, timing, and site requirements."
+          },
+          {
+            "title": "Confirm specs",
+            "description": "Align mix design, finish goals, and placement needs."
+          },
+          {
+            "title": "Schedule",
+            "description": "Lock delivery windows and truck sequencing."
+          },
+          {
+            "title": "Deliver",
+            "description": "Coordinate dispatch and on-site staging."
+          },
+          {
+            "title": "Support",
+            "description": "Stay aligned through placement and follow-up."
+          }
+        ]
+      },
+      "processItems": {
+        "request": {
+          "title": "Request",
+          "body": "Share scope, timing, and site requirements."
+        },
+        "confirmSpecs": {
+          "title": "Confirm specs",
+          "body": "Align mix design, finish goals, and placement needs."
+        },
+        "schedule": {
+          "title": "Schedule",
+          "body": "Lock delivery windows and truck sequencing."
+        },
+        "deliverSupport": {
+          "title": "Deliver & support",
+          "body": "Coordinate dispatch, on-site staging, and follow-up."
+        }
+      },
+      "safetyQuality": {
+        "title": "Safety & quality",
+        "subtitle": "Jobsite-ready practices and quality checks aligned to project needs.",
+        "imageAlt": "Concrete crew coordinating safety checks at a jobsite",
+        "items": [
+          "Pre-pour coordination for access and placement readiness.",
+          "Batch monitoring and documentation on request.",
+          "Clear communication when conditions change.",
+          "Safety-first jobsite protocols."
+        ]
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "subtitle": "Responsible practices that reduce waste and support efficient deliveries.",
+        "imageAlt": "Dispatch planning and routing coordination",
+        "items": [
+          "Route planning to minimize idle time.",
+          "Mix planning to reduce over-ordering.",
+          "Material sourcing aligned to project requirements.",
+          "On-site coordination to limit rework."
+        ]
+      },
+      "serviceArea": {
+        "title": "Service area",
+        "subtitle": "One headquarters with coverage across the Wasatch Front and nearby regions.",
+        "hqLabel": "Headquarters",
+        "hqName": "Salt Lake City main yard",
+        "hqAddress": "1250 N 200 W, Salt Lake City, UT",
+        "imageAlt": "Utah service yard and dispatch hub",
+        "coverageLabel": "Coverage",
+        "coverageNote": "Salt Lake County, Utah County, Davis County, Weber County, Tooele County, Summit County"
+      },
+      "finalCta": {
+        "title": "Talk with a concrete specialist",
+        "subtitle": "Get scheduling guidance, mix recommendations, and clear delivery planning.",
+        "primaryCta": "Call dispatch",
+        "secondaryCta": "Contact us"
+      },
+      "images": {
+        "about1Alt": "Concrete service yard and dispatch hub",
+        "about2Alt": "Jobsite safety coordination and staging",
+        "about3Alt": "Dispatch planning and efficient routing"
+      }
+    },
+    "contact": {
+      "title": "Contact dispatch",
+      "intro": "Reach a concrete specialist for scheduling and support.",
+      "hero": {
+        "title": "Contact dispatch for clear scheduling and support.",
+        "subtitle": "Call, email, or send a request to align mixes, timing, and jobsite needs."
+      },
+      "methods": {
+        "title": "Primary contact methods",
+        "subtitle": "Connect with dispatch the way that works best for your team.",
+        "call": {
+          "title": "Call dispatch",
+          "subtitle": "Fast answers on availability, sequencing, and mix guidance.",
+          "cta": "Call now"
+        },
+        "email": {
+          "title": "Email sales",
+          "subtitle": "Share plans, submittals, or scheduling questions.",
+          "cta": "Send email"
+        },
+        "directions": {
+          "title": "Get directions",
+          "subtitle": "Find the main yard and dispatch hub.",
+          "cta": "Get directions"
+        }
+      },
+      "form": {
+        "title": "Request scheduling support",
+        "subtitle": "Provide project details so a specialist can review your request.",
+        "note": "Request handling follows current schedule availability.",
+        "fields": {
+          "fullName": "Full name",
+          "email": "Email",
+          "phone": "Phone (optional)",
+          "projectType": "Project type",
+          "cityOrZip": "City or ZIP (optional)",
+          "message": "Project details",
+          "consent": "I agree to be contacted about this request."
+        },
+        "placeholders": {
+          "fullName": "Jordan Blake",
+          "email": "jordan@example.com",
+          "phone": "(801) 555-0123",
+          "projectType": "Select a project type",
+          "cityOrZip": "Salt Lake City, UT",
+          "message": "Share scope, volume, access notes, and scheduling preferences."
+        },
+        "projectTypes": [
+          "Ready-mix concrete",
+          "Cement delivery",
+          "Aggregate supply",
+          "Scheduling support",
+          "Other"
+        ],
+        "validation": {
+          "required": "Please complete all required fields.",
+          "email": "Enter a valid email address.",
+          "phone": "Enter a valid phone number.",
+          "messageShort": "Provide a few more details in the message."
+        },
+        "submit": {
+          "idle": "Send request",
+          "sending": "Sending...",
+          "subject": "Concrete scheduling request",
+          "consentYes": "Yes",
+          "consentNo": "No"
+        },
+        "status": {
+          "successTitle": "Request received",
+          "successBody": "A specialist will review your request and follow up.",
+          "errorTitle": "Request not sent",
+          "errorBody": "Please try again or reach out by phone or email."
+        }
+      },
+      "hours": {
+        "title": "Business hours and service area",
+        "subtitle": "One headquarters with coverage across the Wasatch Front.",
+        "hoursLabel": "Business hours",
+        "hqLabel": "Headquarters",
+        "serviceAreaLabel": "Service areas",
+        "note": "Hours may vary by season and workload."
+      },
+      "checklist": {
+        "title": "What to include in your request",
+        "subtitle": "Clear details help us align scheduling and logistics.",
+        "items": [
+          "Project location, access notes, and staging constraints.",
+          "Target pour date, time window, and estimated volume.",
+          "Mix type or strength target with any additives required.",
+          "Placement method, finish requirements, and crew readiness.",
+          "Site conditions that may affect truck access or timing."
+        ]
+      },
+      "faq": {
+        "title": "Frequently asked questions",
+        "subtitle": "Quick answers to common scheduling and delivery questions.",
+        "items": [
+          {
+            "question": "How far ahead should we schedule a pour?",
+            "answer": "Share your target date as early as possible so we can align mix design and availability."
+          },
+          {
+            "question": "Can you help with mix recommendations?",
+            "answer": "Yes. We align mixes to strength targets, placement method, and finish requirements."
+          },
+          {
+            "question": "What details help dispatch plan deliveries?",
+            "answer": "Provide site access notes, staging plan, volume, and preferred sequencing."
+          },
+          {
+            "question": "Do you coordinate delivery changes?",
+            "answer": "We share updates when schedules shift and align on a workable window."
+          },
+          {
+            "question": "Can I request documentation for submittals?",
+            "answer": "We can share documentation and batch records upon request."
+          },
+          {
+            "question": "Do you deliver across the Wasatch Front?",
+            "answer": "Yes. We cover Salt Lake, Utah, Davis, Weber, Tooele, and surrounding areas."
+          }
+        ]
+      }
+    }
+  }
+}

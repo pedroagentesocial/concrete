@@ -1,0 +1,51 @@
+---
+import LanguageSwitcher from "./LanguageSwitcher";
+import MobileMenu from "./MobileMenu";
+import { t, type Lang } from "../i18n";
+const { lang } = Astro.props as { lang: Lang };
+const pathname = Astro.url.pathname;
+
+const links = [
+  { href: `/${lang}/`, label: t(lang, "common.nav.home") },
+  { href: `/${lang}/products`, label: t(lang, "common.nav.products") },
+  { href: `/${lang}/services`, label: t(lang, "common.nav.services") },
+  { href: `/${lang}/projects`, label: t(lang, "common.nav.projects") },
+  { href: `/${lang}/resources`, label: t(lang, "common.nav.resources") },
+  { href: `/${lang}/about`, label: t(lang, "common.nav.about") },
+  { href: `/${lang}/contact`, label: t(lang, "common.nav.contact") }
+];
+
+const isActive = (href: string) => {
+  if (href.endsWith(`/${lang}/`)) return pathname === `/${lang}/`;
+  return pathname === href || pathname.startsWith(href + "/");
+};
+---
+<header class="sticky top-0 z-50 border-b border-muted bg-white">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
+    <a href={`/${lang}/`} class="flex flex-col">
+      <p class="text-xs uppercase tracking-[0.2em] text-muted">Wasatch</p>
+      <p class="text-lg font-semibold text-text">Wasatch Cement & Concrete Supply</p>
+    </a>
+    <nav class="hidden items-center gap-6 text-sm font-medium text-text lg:flex" aria-label="Main navigation">
+      {links.map(({ href, label }) => (
+        <a
+          href={href}
+          class={`pb-1 border-b-2 ${isActive(href) ? "border-brand" : "border-transparent hover:border-muted"} focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg`}
+          aria-current={isActive(href) ? "page" : undefined}
+        >
+          {label}
+        </a>
+      ))}
+    </nav>
+    <div class="flex items-center gap-3">
+      <LanguageSwitcher client:load />
+      <a
+        href={`/${lang}/contact`}
+        class="hidden lg:inline-flex group relative overflow-hidden items-center justify-center h-11 px-5 rounded-2xl text-sm font-semibold text-white bg-primary transition-all duration-200 ease-out hover:-translate-y-0.5 hover:scale-[1.01] active:translate-y-0 active:scale-[0.99] hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
+      >
+        {t(lang, "home.hero.primaryCta")}
+      </a>
+      <MobileMenu client:load lang={lang} />
+    </div>
+  </div>
+</header>

@@ -1,0 +1,79 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import QuoteDrawer from "../components/QuoteDrawer";
+import { type Lang } from "../i18n";
+
+const {
+  title,
+  description,
+  lang = "en",
+  canonical,
+  alternateLang,
+  alternateUrl,
+  ogImage
+} = Astro.props as {
+  title?: string;
+  description?: string;
+  lang?: Lang;
+  canonical?: string;
+  alternateLang?: Lang;
+  alternateUrl?: string;
+  ogImage?: string;
+};
+
+const siteName = "Wasatch Cement & Concrete Supply";
+const pageTitle = title ? `${title} | ${siteName}` : siteName;
+const metaDescription = description ?? "Utah-ready concrete and cement supply with reliable logistics, mix expertise, and jobsite support.";
+const image = ogImage ?? "/og-default.png";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Wasatch Cement & Concrete Supply",
+  "image": image,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1250 N 200 W",
+    "addressLocality": "Salt Lake City",
+    "addressRegion": "UT",
+    "postalCode": "84116",
+    "addressCountry": "US"
+  },
+  "telephone": "+1-801-555-0148",
+  "url": canonical ?? Astro.url.toString(),
+  "openingHours": "Mo-Sa 06:00-18:00"
+};
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={metaDescription} />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={image} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:image" content={image} />
+    {canonical ? <link rel="canonical" href={canonical} /> : null}
+    {alternateLang && alternateUrl ? <link rel="alternate" hreflang={alternateLang} href={alternateUrl} /> : null}
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body class="bg-bg text-text">
+    <Navbar lang={lang} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+    <QuoteDrawer client:load lang={lang} />
+  </body>
+  </html>

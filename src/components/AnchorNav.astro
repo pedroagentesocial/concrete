@@ -1,0 +1,40 @@
+---
+const { title, items, sticky = true } = Astro.props as {
+  title: string;
+  items: { id: string; label: string }[];
+  sticky?: boolean;
+};
+const wrapper = sticky
+  ? "sticky top-20 z-20 border border-muted bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-3"
+  : "border border-muted bg-white rounded-2xl px-4 py-3";
+---
+<nav aria-label={title} class={wrapper}>
+  <p class="text-xs uppercase tracking-[0.24em] text-muted">{title}</p>
+  <div class="mt-3 hidden flex-wrap gap-3 text-sm font-semibold sm:flex">
+    {items.map((item) => (
+      <a class="anchor-link text-brand hover:text-brand/80" href={`#${item.id}`}>
+        {item.label}
+      </a>
+    ))}
+  </div>
+  <div class="mt-3 sm:hidden">
+    <select
+      class="w-full rounded-2xl border border-muted bg-white px-3 py-2 text-sm text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
+      onchange="if (this.value) window.location.hash = this.value"
+    >
+      <option value="">{title}</option>
+      {items.map((item) => (
+        <option value={item.id}>{item.label}</option>
+      ))}
+    </select>
+  </div>
+</nav>
+
+<style>
+  :global(body:has(#cement:target) .anchor-link[href="#cement"]),
+  :global(body:has(#ready-mix:target) .anchor-link[href="#ready-mix"]),
+  :global(body:has(#aggregates:target) .anchor-link[href="#aggregates"]),
+  :global(body:has(#delivery:target) .anchor-link[href="#delivery"]) {
+    color: rgb(14 116 144);
+  }
+</style>

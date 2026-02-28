@@ -1,0 +1,29 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import { processSteps } from "../data/processSteps";
+import { t, type Lang } from "../i18n";
+
+const { lang } = Astro.props as { lang: Lang };
+const steps = processSteps.map((step) => ({
+  id: step.id,
+  title: t(lang, step.titleKey),
+  description: t(lang, step.bodyKey)
+}));
+---
+
+<section class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+    <SectionHeader title={t(lang, "pages.about.process.title")} subtitle={t(lang, "pages.about.process.subtitle")} align="center" />
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {steps.map((step, index) => (
+        <article class="rounded-2xl border border-muted bg-white p-6">
+          <div class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-muted text-sm font-semibold text-text">
+            {String(index + 1).padStart(2, "0")}
+          </div>
+          <h3 class="mt-4 text-base font-semibold text-text">{step.title}</h3>
+          <p class="mt-2 text-sm text-text/80">{step.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

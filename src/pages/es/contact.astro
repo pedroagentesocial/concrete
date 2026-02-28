@@ -1,0 +1,47 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactHero from "../../components/ContactHero.astro";
+import ContactMethods from "../../components/ContactMethods.astro";
+import ContactFormSection from "../../components/ContactFormSection.astro";
+import ContactHoursServiceArea from "../../components/ContactHoursServiceArea.astro";
+import ContactChecklist from "../../components/ContactChecklist.astro";
+import ContactFaq from "../../components/ContactFaq.astro";
+import ContactCtaSection from "../../components/ContactCtaSection.astro";
+import Reveal from "../../components/Reveal";
+import { t } from "../../i18n";
+
+const lang = "es";
+const canonical = new URL(`/es/contact`, Astro.url).toString();
+const alternateUrl = new URL(`/en/contact`, Astro.url).toString();
+---
+
+<BaseLayout
+  title={t(lang, "pages.contact.title")}
+  description={t(lang, "pages.contact.intro")}
+  lang={lang}
+  canonical={canonical}
+  alternateLang="en"
+  alternateUrl={alternateUrl}
+>
+  <Reveal client:load delayMs={0}>
+    <ContactHero lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={80}>
+    <ContactMethods lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={160}>
+    <ContactFormSection lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={240}>
+    <ContactHoursServiceArea lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={320}>
+    <ContactChecklist lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={400}>
+    <ContactFaq lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={480}>
+    <ContactCtaSection lang={lang} />
+  </Reveal>
+</BaseLayout>

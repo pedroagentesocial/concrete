@@ -1,0 +1,83 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import Reveal from "./Reveal";
+import Button from "./Button";
+import { products } from "../data/products";
+import { t, type Lang } from "../i18n";
+const { lang } = Astro.props as { lang: Lang };
+const [feature, ...rest] = products;
+const gridItems = rest.slice(0, 3);
+---
+<section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+  <Reveal client:load>
+    <SectionHeader title={t(lang, "home.productsOverview.title")} subtitle={t(lang, "home.productsOverview.subtitle")} align="center" />
+  </Reveal>
+  <div class="grid gap-6 lg:gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+    <Reveal client:load delayMs={80}>
+      <div class="group rounded-2xl overflow-hidden border border-muted transition-all duration-200 ease-out hover:border-brand h-full min-h-[280px] sm:min-h-[360px] lg:min-h-[420px]">
+        <picture>
+          <source srcset={feature.imageSrc} type="image/jpeg" />
+          <img
+            src={feature.imageSrc}
+            alt={t(lang, feature.imageAltKey)}
+            loading="eager"
+            class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:transform-none"
+          />
+        </picture>
+      </div>
+    </Reveal>
+    <Reveal client:load delayMs={160}>
+      <div class="group rounded-2xl border border-muted bg-surface p-8 h-full min-h-[280px] sm:min-h-[360px] lg:min-h-[420px] flex flex-col">
+      <div class="h-1 w-16 rounded-full bg-brand"></div>
+      {feature.badgeKey ? (
+        <span class="mt-4 inline-flex w-fit items-center rounded-full border border-muted px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-muted transition-transform duration-200 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:transform-none">
+          {t(lang, feature.badgeKey)}
+        </span>
+      ) : null}
+      <h3 class="mt-4 text-2xl font-semibold text-text">{t(lang, feature.titleKey)}</h3>
+      <p class="mt-3 text-text/80 leading-relaxed">{t(lang, feature.descriptionKey)}</p>
+      <ul class="mt-4 space-y-2 text-sm text-text/80">
+        {feature.highlightsKey.map((key) => (
+          <li>{t(lang, key)}</li>
+        ))}
+      </ul>
+      <div class="mt-6">
+        <Button client:load onClick={() => (window.location.href = `/${lang}/products#${feature.id}`)} variant="primary">
+          {t(lang, "home.productsOverview.learnMore") as any}
+        </Button>
+      </div>
+      </div>
+    </Reveal>
+  </div>
+  <div class="mt-8 grid gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
+    {gridItems.map((item, idx) => (
+      <Reveal client:load delayMs={idx * 80}>
+        <article class="group rounded-2xl border border-muted bg-surface p-6 h-full flex flex-col transition-all duration-200 ease-out hover:border-brand hover:-translate-y-0.5">
+          <div class="rounded-xl overflow-hidden border border-muted bg-white">
+            <img
+              src={item.imageSrc}
+              alt={t(lang, item.imageAltKey)}
+              loading="lazy"
+              class="h-24 w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:transform-none"
+            />
+          </div>
+          {item.badgeKey ? (
+            <span class="mt-4 inline-flex w-fit items-center rounded-full border border-muted px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-muted transition-transform duration-200 ease-out group-hover:translate-x-1 motion-reduce:transition-none motion-reduce:transform-none">
+              {t(lang, item.badgeKey)}
+            </span>
+          ) : null}
+          <h4 class="mt-3 text-xl font-semibold text-text">{t(lang, item.titleKey)}</h4>
+          <p class="mt-2 text-sm text-text/80 leading-relaxed">{t(lang, item.descriptionKey)}</p>
+          <ul class="mt-4 space-y-2 text-xs text-text/80">
+            {item.highlightsKey.map((key) => (
+              <li>{t(lang, key)}</li>
+            ))}
+          </ul>
+          <a class="mt-4 inline-flex text-sm font-semibold text-brand hover:text-brand/80" href={`/${lang}/products#${item.id}`}>
+            {t(lang, "home.productsOverview.learnMore")}
+          </a>
+        </article>
+      </Reveal>
+    ))}
+  </div>
+</section>

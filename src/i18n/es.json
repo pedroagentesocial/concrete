@@ -1,0 +1,878 @@
+{
+  "common": {
+    "nav": {
+      "home": "Inicio",
+      "products": "Productos",
+      "services": "Servicios",
+      "projects": "Proyectos",
+      "resources": "Recursos",
+      "about": "Nosotros",
+      "contact": "Contacto"
+    },
+    "a11y": {
+      "openNav": "Abrir navegación",
+      "closeNav": "Cerrar navegación",
+      "switchToEnglish": "Cambiar idioma a inglés",
+      "switchToSpanish": "Cambiar idioma a español",
+      "prevSlide": "Diapositiva anterior",
+      "nextSlide": "Siguiente diapositiva",
+      "goToSlide": "Ir a la diapositiva {{index}}",
+      "visitLinkedIn": "Visita nuestro LinkedIn",
+      "visitFacebook": "Visita nuestro Facebook",
+      "visitInstagram": "Visita nuestro Instagram",
+      "visitX": "Visita nuestro perfil en X"
+    },
+    "switchToEn": "Switch to English",
+    "switchToEs": "Cambiar a Español",
+    "close": "Cerrar",
+    "footer": {
+      "tagline": "Socio de suministro de concreto para los constructores de Utah.",
+      "legal": "© 2026 Wasatch Cement & Concrete Supply. Todos los derechos reservados."
+    }
+  },
+  "meta": {
+    "title": "Proveedor de concreto en Utah",
+    "description": "Wasatch Cement & Concrete Supply ofrece mezclas confiables, logística puntual y apoyo en obra en todo Utah."
+  },
+  "home": {
+    "heroSlides": {
+      "slide1": {
+        "title": "Concreto para obras en Utah",
+        "subtitle": "Mezclas verificadas y despacho ágil.",
+        "primaryCta": "Llamar ahora",
+        "secondaryCta": "Ver servicios"
+      },
+      "slide2": {
+        "title": "Coordinación y entregas puntuales",
+        "subtitle": "Agenda y logística que mantienen a las cuadrillas avanzando.",
+        "primaryCta": "Explorar productos",
+        "secondaryCta": "Ver proyectos"
+      },
+      "slide3": {
+        "title": "Mezclas para pavimentos e infraestructura",
+        "subtitle": "Durabilidad y acabado para condiciones de Utah.",
+        "primaryCta": "Ver recursos",
+        "secondaryCta": "Contáctanos"
+      }
+    },
+    "productsOverview": {
+      "title": "Productos hechos para el rendimiento",
+      "subtitle": "Mezclas estructuradas, materiales confiables y soporte de agenda para cada colado.",
+      "learnMore": "Ver más",
+      "badges": {
+        "cement": "ASTM",
+        "readyMix": "Más solicitado",
+        "delivery": "Programación"
+      },
+      "items": {
+        "cement": {
+          "title": "Cemento",
+          "desc": "Opciones ASTM C150 Tipo I/II y Tipo V para necesidades estructurales y especiales."
+        },
+        "readyMix": {
+          "title": "Concreto premezclado",
+          "desc": "Diseños de mezcla afinados para resistencia, acabado y ciclos de colocación."
+        },
+        "aggregates": {
+          "title": "Agregados",
+          "desc": "Gradaciones consistentes para bombeo, acabado y durabilidad."
+        },
+        "delivery": {
+          "title": "Entrega y programación",
+          "desc": "Planeación de despacho, secuencia y actualizaciones en tiempo real."
+        }
+      },
+      "highlights": {
+        "cement": {
+          "one": "Cobertura por categoría ASTM",
+          "two": "Certificados de planta",
+          "three": "Suministro local confiable"
+        },
+        "readyMix": {
+          "one": "Resistencias por especificación",
+          "two": "Guía de aditivos",
+          "three": "Mezclas listas para colocación"
+        },
+        "aggregates": {
+          "one": "Opciones lavadas y trituradas",
+          "two": "Tamaños consistentes",
+          "three": "Reposición puntual"
+        },
+        "delivery": {
+          "one": "Ventanas de colado de 2 horas",
+          "two": "Actualizaciones de agenda en vivo",
+          "three": "Secuencia de camiones"
+        }
+      },
+      "images": {
+        "cementAlt": "Silos de cemento y equipo de dosificación",
+        "readyMixAlt": "Camión premezclado en un colado activo",
+        "aggregatesAlt": "Acopios de agregados en planta",
+        "deliveryAlt": "Coordinación de despacho y programación"
+      },
+      "disclaimer": "La disponibilidad depende de los requerimientos del proyecto."
+    },
+    "whyUs": {
+      "title": "Por qué nos eligen",
+      "subtitle": "Agenda clara, calidad por especificación y soporte local que mantiene el ritmo.",
+      "trustStrip": [
+        { "title": "Ventanas de entrega", "value": "Ventanas de colado de 2 horas" },
+        { "title": "Cumplimiento de especificación", "value": "Dosificación alineada a ASTM" },
+        { "title": "Soporte en obra", "value": "Coordinación en sitio" }
+      ],
+      "items": {
+        "reliableScheduling": {
+          "title": "Programación confiable",
+          "desc": "Ventanas de despacho confirmadas con actualizaciones cuando cambian las condiciones.",
+          "metricValue": "98%",
+          "metricLabel": "Tasa de entregas a tiempo"
+        },
+        "specQuality": {
+          "title": "Control de calidad por especificación",
+          "desc": "Dosificación alineada a ASTM con verificaciones de QC documentadas.",
+          "metricValue": "ASTM C94",
+          "metricLabel": "Cumplimiento en concreto premezclado"
+        },
+        "localLogistics": {
+          "title": "Logística local en Utah",
+          "desc": "Flota y plantas locales reducen tiempos de respuesta en el Wasatch Front.",
+          "metricValue": "15 min",
+          "metricLabel": "Respuesta promedio de despacho"
+        },
+        "jobsiteSupport": {
+          "title": "Soporte en obra",
+          "desc": "Guía de colocación y coordinación de acceso, bombeo y acabados."
+        },
+        "safetyFirst": {
+          "title": "Operación con seguridad primero",
+          "desc": "Protocolos listos para obra en clima frío, calor y zonas de alto tráfico."
+        },
+        "clearCommunication": {
+          "title": "Comunicación transparente",
+          "desc": "Cotizaciones claras, actualizaciones en vivo y un solo punto de contacto."
+        }
+      }
+    },
+    "locations": {
+      "title": "Área de servicio",
+      "subtitle": "Una sede principal en Utah. Entrega rápida en el Wasatch Front y regiones cercanas.",
+      "cta": "Cómo llegar",
+      "ctaCall": "Llamar",
+      "ctaDirections": "Cómo llegar",
+      "labels": {
+        "serviceArea": "Zona de servicio",
+        "address": "Dirección",
+        "call": "Llamar",
+        "hours": "Horario",
+        "coverage": "Cobertura"
+      },
+      "hours": {
+        "standard": "Lun–Sáb · 6:00 AM – 6:00 PM"
+      },
+      "main": {
+        "name": "Sede principal en Salt Lake City",
+        "serviceArea": "Despacho central y coordinación de entregas el mismo día.",
+        "address": "1250 N 200 W, Salt Lake City, UT",
+        "phone": "(801) 555-0148"
+      },
+      "areas": [
+        "Salt Lake County",
+        "Utah County",
+        "Davis County",
+        "Weber County",
+        "Tooele County",
+        "Summit County"
+      ],
+      "images": {
+        "mainAlt": "Sede principal y despacho en Salt Lake City"
+      }
+    },
+    "serviceArea": {
+      "title": "Área de servicio",
+      "subtitle": "Una sede principal en Utah. Entrega rápida en el Wasatch Front y regiones cercanas.",
+      "ctaCall": "Llamar a despacho",
+      "ctaDirections": "Cómo llegar",
+      "labels": {
+        "mainYard": "Sede principal",
+        "address": "Dirección",
+        "call": "Llamar a despacho",
+        "email": "Correo de ventas",
+        "hours": "Horario",
+        "serviceAreas": "Zonas de servicio"
+      },
+      "hours": {
+        "standard": "Lun–Sáb · 6:00 AM – 6:00 PM"
+      },
+      "hq": {
+        "name": "Sede principal / Despacho",
+        "serviceArea": "Despacho central y coordinación de entregas el mismo día.",
+        "address": "1250 N 200 W, Salt Lake City, UT",
+        "phone": "(801) 555-0148",
+        "email": "sales@wasatchcement.com"
+      },
+      "areas": {
+        "saltLakeCity": "Salt Lake City",
+        "westValleyCity": "West Valley City",
+        "sandy": "Sandy",
+        "draper": "Draper",
+        "lehi": "Lehi",
+        "orem": "Orem",
+        "provo": "Provo",
+        "ogden": "Ogden",
+        "layton": "Layton",
+        "bountiful": "Bountiful",
+        "tooele": "Tooele",
+        "parkCity": "Park City"
+      },
+      "images": {
+        "mainAlt": "Sede principal y despacho en Salt Lake City"
+      }
+    },
+    "ctaBand": {
+      "title": "Habla hoy con un especialista en concreto",
+      "subtitle": "Resolvemos dudas sobre mezclas, agenda y coordinación en obra.",
+      "cta": "Solicitar cotización"
+    },
+    "contactCta": {
+      "headline": "Llama ahora para planear tu próximo colado",
+      "body": "Habla con despacho sobre recomendación de mezcla, disponibilidad y coordinación en obra.",
+      "trustLine": "Agenda rápida. Precios claros. Soporte local.",
+      "primaryCta": "Llamar ahora",
+      "secondaryCta": "Solicitar cotización"
+    },
+    "hero": {
+      "title": "Concreto que puedes programar con confianza en Utah.",
+      "subtitle": "Wasatch Cement & Concrete Supply apoya a constructoras, contratistas y municipios con mezclas consistentes, despacho ágil y soporte en obra.",
+      "primaryCta": "Solicitar cotización",
+      "secondaryCta": "Ver servicios",
+      "trustLine": "Dosificación, logística y coordinación en obra pensadas para Utah."
+    },
+    "stats": [
+      { "value": "24/7", "label": "Despacho y coordinación de colados en fin de semana" },
+      { "value": "40+", "label": "Diseños de mezcla para estructuras, pavimentos y especiales" },
+      { "value": "15 min", "label": "Tiempo promedio de respuesta a cambios de agenda" }
+    ],
+    "services": {
+      "title": "Servicios listos para colar que mantienen el ritmo",
+      "subtitle": "De diseño de mezcla a secuencia de entrega, todo se enfoca en confiabilidad.",
+      "items": [
+        {
+          "title": "Suministro de concreto premezclado",
+          "description": "Mezclas verificadas con control de humedad y reportes de calidad."
+        },
+        {
+          "title": "Distribución de cemento y agregados",
+          "description": "Abastecimiento estable con ventanas de entrega flexibles."
+        },
+        {
+          "title": "Coordinación de bombeo y colocación",
+          "description": "Logística lista para cuadrillas y planeación de colado."
+        },
+        {
+          "title": "Dosificación en clima frío y cálido",
+          "description": "Aditivos estacionales y control de temperatura para curados constantes."
+        }
+      ],
+      "imageLabel": "Logística lista para obra",
+      "images": {
+        "heroAlt": "Cuadrilla de concreto en obra con entrega coordinada"
+      },
+      "cards": {
+        "delivery": {
+          "title": "Despacho y entrega",
+          "desc": "Ventanas coordinadas, rutas y actualizaciones en tiempo real.",
+          "bullets": [
+            "Secuencia de camiones",
+            "Ajustes de agenda en vivo"
+          ]
+        },
+        "mixDesign": {
+          "title": "Asesoría de diseño de mezcla",
+          "desc": "Resistencias, aditivos y acabados alineados a la especificación.",
+          "bullets": [
+            "Submittals y coordinación de QC",
+            "Recomendación de aditivos"
+          ]
+        },
+        "onSiteSupport": {
+          "title": "Soporte en obra",
+          "desc": "Alineación con cuadrillas para colocación, acceso y ajustes."
+        },
+        "quality": {
+          "title": "Calidad y pruebas",
+          "desc": "Dosificación consistente con verificación de revenimiento, aire y resistencia.",
+          "bullets": [
+            "Monitoreo de humedad",
+            "Seguimiento de rompimientos"
+          ]
+        }
+      }
+    },
+    "industries": {
+      "title": "Diseñado para los colados más exigentes de Utah",
+      "items": [
+        "Desarrollos comerciales y de uso mixto",
+        "Transporte, pavimentos e infraestructura",
+        "Subdivisiones residenciales y multifamiliares",
+        "Instalaciones industriales y centros logísticos",
+        "Obras municipales y proyectos públicos"
+      ]
+    },
+    "process": {
+      "title": "Un proceso de entrega predecible",
+      "steps": [
+        {
+          "title": "Alcance y mezcla adecuada",
+          "description": "Revisión de objetivos estructurales, horarios y acabados."
+        },
+        {
+          "title": "Planeación de producción",
+          "description": "Confirmación de ventanas de dosificación y secuencia de camiones."
+        },
+        {
+          "title": "Coordinación en día de colado",
+          "description": "Actualizaciones en tiempo real y ajustes en obra."
+        },
+        {
+          "title": "Seguimiento posterior",
+          "description": "Reportes, datos de resistencia y próximos requerimientos."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Capacidades para cada etapa",
+      "viewDetails": "Ver detalles",
+      "items": [
+        { "title": "Cimentaciones y losas", "detail": "Colados estructurales con tolerancias exigentes." },
+        { "title": "Pavimentos y acabados", "detail": "Texturas calibradas para durabilidad y seguridad." },
+        { "title": "Tilt-up y prefabricado", "detail": "Mezclas de alta resistencia con ciclos rápidos." }
+      ]
+    },
+    "testimonials": {
+      "title": "Equipos de Utah que confían en nosotros",
+      "subtitle": "Opiniones de cuadrillas en el Wasatch Front.",
+      "disclaimer": "Testimonios de ejemplo para fines de demostración.",
+      "items": [
+        {
+          "quote": "Wasatch mantiene nuestros colados en tiempo con actualizaciones y resistencias consistentes.",
+          "name": "Jordan Blake",
+          "role": "Superintendente de obra"
+        },
+        {
+          "quote": "Llegan listos con la mezcla correcta y mantienen a la cuadrilla activa.",
+          "name": "Elena Ortiz",
+          "role": "Contratista comercial"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Habla con un especialista en concreto de Utah",
+      "address": "1250 N 200 W, Salt Lake City, UT",
+      "phone": "(801) 555-0148",
+      "email": "dispatch@wasatchcement.com",
+      "hours": "Lun–Sáb · 6:00 AM – 6:00 PM",
+      "note": "Colados de emergencia y fines de semana disponibles.",
+      "cta": "Cómo llegar"
+    },
+    "form": {
+      "title": "Inicia una solicitud de cotización",
+      "fields": {
+        "name": "Nombre completo",
+        "company": "Empresa",
+        "email": "Correo electrónico",
+        "phone": "Teléfono",
+        "service": "Servicio requerido",
+        "message": "Detalles del proyecto"
+      },
+      "placeholders": {
+        "name": "Jordan Blake",
+        "company": "Wasatch Builders",
+        "email": "jordan@example.com",
+        "phone": "(801) 555-0123",
+        "service": "Concreto premezclado",
+        "message": "Cuéntanos fechas de colado, volumen y acceso a la obra."
+      },
+      "services": ["Suministro premezclado", "Entrega de cemento", "Agregados", "Soporte de colocación"],
+      "submit": "Enviar solicitud",
+      "success": "Gracias. Un especialista te contactará pronto.",
+      "error": "Por favor completa todos los campos requeridos."
+    }
+  },
+  "footer": {
+    "brand": {
+      "name": "Wasatch Cement & Concrete Supply",
+      "value": "Suministro confiable de concreto y soporte en obra.",
+      "serviceArea": "Servicio en Utah"
+    },
+    "navHeader": "Navegación",
+    "contactHeader": "Contacto",
+    "locationsHeader": "Zonas de servicio",
+    "labels": {
+      "phone": "Teléfono",
+      "email": "Correo",
+      "address": "Dirección",
+      "hours": "Horario",
+      "followUs": "Síguenos",
+      "privacy": "Privacidad",
+      "terms": "Términos"
+    },
+    "copyright": "© {{year}} Wasatch Cement & Concrete Supply. Todos los derechos reservados."
+  },
+  "pages": {
+    "products": {
+      "title": "Productos",
+      "intro": "Explora cemento, agregados y aditivos pensados para las condiciones de Utah.",
+      "hero": {
+        "title": "Productos listos para colados en Utah",
+        "subtitle": "Cemento con base ASTM, concreto premezclado por especificación, agregados confiables y entrega coordinada.",
+        "primaryCta": "Llamar ahora",
+        "secondaryCta": "Detalles de entrega"
+      },
+      "navTitle": "En esta página",
+      "nav": {
+        "cement": "Cemento",
+        "readyMix": "Concreto premezclado",
+        "aggregates": "Agregados",
+        "delivery": "Entrega y programación"
+      },
+      "deliveryDetailsCta": "Detalles de entrega",
+      "sectionCta": "Contactar ventas",
+      "sections": {
+        "cement": {
+          "title": "Cemento",
+          "subtitle": "Categorías ASTM y suministro confiable para mezclas estructurales.",
+          "desc": "Cemento Tipo I/II y Tipo V con documentación para submittals y especificaciones.",
+          "highlights": {
+            "one": "Cobertura ASTM C150 para necesidades estructurales comunes",
+            "two": "Certificados de planta y registros por solicitud",
+            "three": "Suministro local con disponibilidad constante"
+          },
+          "specs": {
+            "title": "Especificaciones clave",
+            "one": "ASTM C150 Tipo I/II y Tipo V",
+            "two": "Fineness Blaine típica 360–420 m²/kg",
+            "three": "Opciones de bajo álcali bajo solicitud"
+          }
+        },
+        "readyMix": {
+          "title": "Concreto premezclado",
+          "subtitle": "Diseños de mezcla enfocados en colocación, acabado y durabilidad.",
+          "desc": "Resistencias objetivo y guía de aditivos alineadas a tu agenda de colado.",
+          "highlights": {
+            "one": "Diseños de mezcla por especificación del proyecto",
+            "two": "Soporte de aditivos para frío, calor y fraguado rápido",
+            "three": "Lotes listos para colocación con control de calidad"
+          }
+        },
+        "aggregates": {
+          "title": "Agregados",
+          "subtitle": "Gradaciones consistentes para bombeo y acabado.",
+          "desc": "Opciones lavadas y trituradas con tamaños confiables y reposición puntual.",
+          "highlights": {
+            "one": "Opciones lavadas y trituradas por aplicación",
+            "two": "Tamaños consistentes para acabado y durabilidad",
+            "three": "Suministro confiable alineado a entregas"
+          }
+        },
+        "delivery": {
+          "title": "Entrega y programación",
+          "subtitle": "Despacho coordinado para mantener a la cuadrilla avanzando.",
+          "desc": "Secuencia de camiones, actualizaciones en vivo y comunicación en obra.",
+          "highlights": {
+            "one": "Ventanas de colado de dos horas y confirmación de agenda",
+            "two": "Actualizaciones de despacho cuando cambian las condiciones",
+            "three": "Un solo punto de contacto para coordinación en obra"
+          }
+        }
+      },
+      "deliveryDetails": {
+        "title": "Detalles de entrega",
+        "subtitle": "Guía de planificación para programación, acceso y coordinación en obra.",
+        "sections": {
+          "scheduling": {
+            "title": "Programación",
+            "items": [
+              "Define la anticipación según el tamaño del proyecto y la mezcla.",
+              "Confirma la ventana de entrega antes del día de colado.",
+              "Despacho puede llamar o enviar mensaje si hay cambios."
+            ]
+          },
+          "access": {
+            "title": "Acceso",
+            "items": [
+              "Mantén libres los accesos para la llegada del camión.",
+              "Confirma radio de giro, códigos de acceso y entradas.",
+              "Asegura la altura libre para canaletas y líneas."
+            ]
+          },
+          "unloading": {
+            "title": "Descarga",
+            "items": [
+              "Define dónde el camión puede colocarse y descargar con seguridad.",
+              "El cliente es responsable de la preparación del sitio y el acceso.",
+              "La coordinación con la cuadrilla es necesaria para una descarga segura."
+            ]
+          },
+          "sitePrep": {
+            "title": "Preparación del sitio",
+            "items": [
+              "Subrasante, cimbras y acero deben estar listos antes de la llegada.",
+              "Verifica niveles y áreas de colocación con anticipación.",
+              "Precaución con líneas eléctricas y riesgos aéreos."
+            ]
+          },
+          "cancellations": {
+            "title": "Cancelaciones",
+            "items": [
+              "Avisar a despacho lo antes posible si hay cambios.",
+              "Cambios de último momento pueden afectar la disponibilidad.",
+              "Podrían aplicarse cargos por cancelaciones de corto aviso."
+            ]
+          }
+        },
+        "disclaimer": "Los detalles pueden variar según el proyecto y la disponibilidad."
+      },
+      "images": {
+        "cementAlt": "Silos de cemento y manejo de materiales",
+        "readyMixAlt": "Colado de concreto premezclado en obra",
+        "aggregatesAlt": "Acopios de agregados y bandas transportadoras",
+        "deliveryAlt": "Camión de entrega de concreto en obra"
+      },
+      "cement": {
+        "title": "Cemento",
+        "desc": "Opciones que incluyen ASTM C150 Tipo I/II y ASTM C150 Tipo V."
+      },
+      "readyMix": {
+        "title": "Concreto premezclado",
+        "desc": "Mezclas afinadas para ciclos de colocación, resistencia y acabado."
+      },
+      "aggregates": {
+        "title": "Agregados",
+        "desc": "Gradaciones para acabados consistentes y durabilidad."
+      },
+      "disclaimer": "La disponibilidad depende de los requerimientos del proyecto."
+    },
+    "services": {
+      "title": "Servicios",
+      "intro": "Diseño de mezcla, despacho, coordinación de colocación y control de calidad."
+    },
+    "servicesPage": {
+      "images": {
+        "deliveryAlt": "Despacho de camiones de concreto y coordinación de entrega",
+        "mixDesignAlt": "Ingeniero revisando el diseño de mezcla y submittals",
+        "onSiteSupportAlt": "Soporte en obra coordinando la colocación con la cuadrilla",
+        "qualityAlt": "Pruebas de control de calidad de revenimiento, aire y resistencia"
+      }
+    },
+    "projects": {
+      "title": "Proyectos",
+      "intro": "Una muestra de capacidades en estructuras, pavimentos y trabajos especiales."
+    },
+    "resources": {
+      "title": "Recursos",
+      "intro": "Guías y especificaciones para planear colados exitosos."
+    },
+    "about": {
+      "title": "Nosotros",
+      "intro": "Equipo local enfocado en confiabilidad, comunicación y seguridad.",
+      "hero": {
+        "title": "Apoyo confiable para colados en Utah con claridad y consistencia.",
+        "subtitle": "Wasatch Cement & Concrete Supply colabora con contratistas y constructoras para alinear especificaciones, agenda y coordinación en obra.",
+        "primaryCta": "Llamar a despacho",
+        "secondaryCta": "Ver productos",
+        "trustLine": "Soporte de despacho, guía por especificación y coordinación en obra."
+      },
+      "story": {
+        "title": "Nuestra historia",
+        "subtitle": "Una operación local enfocada en entregas confiables y soporte ágil.",
+        "items": [
+          {
+            "title": "Operación local consolidada",
+            "description": "Construimos una base en Utah para atender obra con respuesta rápida."
+          },
+          {
+            "title": "Capacidad de entrega ampliada",
+            "description": "Escalamos la coordinación de flota para colados secuenciados."
+          },
+          {
+            "title": "Guía de mezclas fortalecida",
+            "description": "Soporte por especificación para resistencia, colocación y acabados."
+          },
+          {
+            "title": "Coordinación en obra optimizada",
+            "description": "Comunicación clara y alineación en sitio para colados más fluidos."
+          }
+        ]
+      },
+      "timeline": {
+        "localOperations": {
+          "title": "Operación local consolidada",
+          "body": "Construimos una base en Utah para atender obra con respuesta rápida."
+        },
+        "deliveryCapability": {
+          "title": "Capacidad de entrega ampliada",
+          "body": "Escalamos la coordinación de flota para colados secuenciados."
+        },
+        "mixGuidance": {
+          "title": "Guía de mezclas fortalecida",
+          "body": "Soporte por especificación para resistencia, colocación y acabados."
+        },
+        "jobsiteCoordination": {
+          "title": "Coordinación en obra optimizada",
+          "body": "Comunicación clara y alineación en sitio para colados más fluidos."
+        }
+      },
+      "capabilities": {
+        "title": "Lo que hacemos",
+        "subtitle": "Suministro y coordinación de concreto con resultados predecibles.",
+        "items": [
+          {
+            "title": "Programación de entregas",
+            "description": "Ventanas confirmadas, rutas y actualizaciones oportunas."
+          },
+          {
+            "title": "Soporte de concreto premezclado",
+            "description": "Guía por especificación para resistencias, colocación y acabado."
+          },
+          {
+            "title": "Suministro de agregados",
+            "description": "Gradaciones consistentes y reposición para mantener el ritmo."
+          },
+          {
+            "title": "Coordinación en obra",
+            "description": "Planeación de acceso, staging y comunicación en sitio."
+          }
+        ]
+      },
+      "capabilityItems": {
+        "delivery": {
+          "title": "Programación de entregas",
+          "body": "Ventanas confirmadas, rutas y actualizaciones oportunas."
+        },
+        "readyMix": {
+          "title": "Soporte de concreto premezclado",
+          "body": "Guía por especificación para resistencias, colocación y acabado."
+        },
+        "aggregates": {
+          "title": "Suministro de agregados",
+          "body": "Gradaciones consistentes y reposición para mantener el ritmo."
+        },
+        "coordination": {
+          "title": "Coordinación en obra",
+          "body": "Planeación de acceso, staging y comunicación en sitio."
+        }
+      },
+      "process": {
+        "title": "Cómo trabajamos",
+        "subtitle": "Un flujo claro desde la solicitud hasta el colado.",
+        "steps": [
+          {
+            "title": "Solicitud",
+            "description": "Compartir alcance, fechas y requisitos de obra."
+          },
+          {
+            "title": "Confirmar especificaciones",
+            "description": "Alinear mezcla, acabados y colocación."
+          },
+          {
+            "title": "Programar",
+            "description": "Definir ventanas y secuencia de camiones."
+          },
+          {
+            "title": "Entregar",
+            "description": "Coordinar despacho y staging en sitio."
+          },
+          {
+            "title": "Soporte",
+            "description": "Acompañar la colocación y el seguimiento."
+          }
+        ]
+      },
+      "processItems": {
+        "request": {
+          "title": "Solicitud",
+          "body": "Compartir alcance, fechas y requisitos de obra."
+        },
+        "confirmSpecs": {
+          "title": "Confirmar especificaciones",
+          "body": "Alinear mezcla, acabados y colocación."
+        },
+        "schedule": {
+          "title": "Programar",
+          "body": "Definir ventanas y secuencia de camiones."
+        },
+        "deliverSupport": {
+          "title": "Entregar y dar soporte",
+          "body": "Coordinar despacho, staging en sitio y seguimiento."
+        }
+      },
+      "safetyQuality": {
+        "title": "Seguridad y calidad",
+        "subtitle": "Prácticas listas para obra y controles de calidad por proyecto.",
+        "imageAlt": "Cuadrilla de concreto coordinando revisiones de seguridad en obra",
+        "items": [
+          "Coordinación previa para acceso y preparación del sitio.",
+          "Monitoreo de lote y documentación bajo solicitud.",
+          "Comunicación clara cuando cambian las condiciones.",
+          "Protocolos de seguridad en obra."
+        ]
+      },
+      "sustainability": {
+        "title": "Sustentabilidad",
+        "subtitle": "Prácticas responsables que reducen desperdicio y mejoran la eficiencia.",
+        "imageAlt": "Planeación de rutas y coordinación de despacho",
+        "items": [
+          "Planeación de rutas para reducir tiempos de espera.",
+          "Planificación de mezcla para evitar sobrepedido.",
+          "Abastecimiento acorde a requerimientos del proyecto.",
+          "Coordinación en sitio para evitar retrabajos."
+        ]
+      },
+      "serviceArea": {
+        "title": "Área de servicio",
+        "subtitle": "Una sede principal con cobertura en el Wasatch Front y regiones cercanas.",
+        "hqLabel": "Sede principal",
+        "hqName": "Patio principal en Salt Lake City",
+        "hqAddress": "1250 N 200 W, Salt Lake City, UT",
+        "imageAlt": "Patio de servicio y despacho en Utah",
+        "coverageLabel": "Cobertura",
+        "coverageNote": "Salt Lake County, Utah County, Davis County, Weber County, Tooele County, Summit County"
+      },
+      "finalCta": {
+        "title": "Habla con un especialista en concreto",
+        "subtitle": "Recibe guía de agenda, recomendaciones de mezcla y planificación clara.",
+        "primaryCta": "Llamar a despacho",
+        "secondaryCta": "Contacto"
+      },
+      "images": {
+        "about1Alt": "Patio de servicio y centro de despacho",
+        "about2Alt": "Coordinación de seguridad y staging en obra",
+        "about3Alt": "Planeación de rutas y entregas eficientes"
+      }
+    },
+    "contact": {
+      "title": "Contacto con despacho",
+      "intro": "Habla con un especialista para programación y soporte.",
+      "hero": {
+        "title": "Contacta a despacho para una programación clara.",
+        "subtitle": "Llama, escribe o envía una solicitud para alinear mezclas y tiempos."
+      },
+      "methods": {
+        "title": "Métodos de contacto principales",
+        "subtitle": "Conéctate con despacho de la forma que prefieras.",
+        "call": {
+          "title": "Llamar a despacho",
+          "subtitle": "Respuestas rápidas sobre disponibilidad y secuencia.",
+          "cta": "Llamar ahora"
+        },
+        "email": {
+          "title": "Correo a ventas",
+          "subtitle": "Comparte planes, submittals o dudas de agenda.",
+          "cta": "Enviar correo"
+        },
+        "directions": {
+          "title": "Cómo llegar",
+          "subtitle": "Ubica el patio principal y centro de despacho.",
+          "cta": "Ver mapa"
+        }
+      },
+      "form": {
+        "title": "Solicita soporte de programación",
+        "subtitle": "Comparte detalles del proyecto para revisar tu solicitud.",
+        "note": "La atención depende de la disponibilidad del calendario.",
+        "fields": {
+          "fullName": "Nombre completo",
+          "email": "Correo electrónico",
+          "phone": "Teléfono (opcional)",
+          "projectType": "Tipo de proyecto",
+          "cityOrZip": "Ciudad o código postal (opcional)",
+          "message": "Detalles del proyecto",
+          "consent": "Acepto que me contacten sobre esta solicitud."
+        },
+        "placeholders": {
+          "fullName": "Jordan Blake",
+          "email": "jordan@example.com",
+          "phone": "(801) 555-0123",
+          "projectType": "Selecciona un tipo de proyecto",
+          "cityOrZip": "Salt Lake City, UT",
+          "message": "Comparte alcance, volumen, acceso y preferencias de agenda."
+        },
+        "projectTypes": [
+          "Concreto premezclado",
+          "Entrega de cemento",
+          "Suministro de agregados",
+          "Soporte de programación",
+          "Otro"
+        ],
+        "validation": {
+          "required": "Completa los campos obligatorios.",
+          "email": "Ingresa un correo válido.",
+          "phone": "Ingresa un teléfono válido.",
+          "messageShort": "Agrega más detalles en el mensaje."
+        },
+        "submit": {
+          "idle": "Enviar solicitud",
+          "sending": "Enviando...",
+          "subject": "Solicitud de programación de concreto",
+          "consentYes": "Sí",
+          "consentNo": "No"
+        },
+        "status": {
+          "successTitle": "Solicitud recibida",
+          "successBody": "Un especialista revisará tu solicitud y dará seguimiento.",
+          "errorTitle": "No se pudo enviar",
+          "errorBody": "Intenta de nuevo o contáctanos por teléfono o correo."
+        }
+      },
+      "hours": {
+        "title": "Horario y área de servicio",
+        "subtitle": "Una sede principal con cobertura en el Wasatch Front.",
+        "hoursLabel": "Horario",
+        "hqLabel": "Sede principal",
+        "serviceAreaLabel": "Áreas de servicio",
+        "note": "El horario puede variar por temporada y carga operativa."
+      },
+      "checklist": {
+        "title": "Qué incluir en tu solicitud",
+        "subtitle": "Los detalles ayudan a alinear programación y logística.",
+        "items": [
+          "Ubicación del proyecto, acceso y restricciones de staging.",
+          "Fecha objetivo, ventana de tiempo y volumen estimado.",
+          "Tipo de mezcla o resistencia con aditivos requeridos.",
+          "Método de colocación, acabado y preparación de cuadrilla.",
+          "Condiciones del sitio que afecten acceso o tiempos."
+        ]
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "subtitle": "Respuestas rápidas sobre programación y entregas.",
+        "items": [
+          {
+            "question": "¿Con cuánta anticipación debo programar un colado?",
+            "answer": "Comparte tu fecha objetivo lo antes posible para alinear mezcla y disponibilidad."
+          },
+          {
+            "question": "¿Pueden ayudar con recomendaciones de mezcla?",
+            "answer": "Sí. Alineamos la mezcla con resistencias, colocación y acabado."
+          },
+          {
+            "question": "¿Qué información necesita despacho para planear entregas?",
+            "answer": "Acceso al sitio, staging, volumen y secuencia preferida."
+          },
+          {
+            "question": "¿Coordinan cambios en la agenda?",
+            "answer": "Sí, avisamos cuando hay cambios y alineamos una ventana viable."
+          },
+          {
+            "question": "¿Puedo solicitar documentación para submittals?",
+            "answer": "Podemos compartir documentación y registros por solicitud."
+          },
+          {
+            "question": "¿Atienden el Wasatch Front?",
+            "answer": "Sí. Cubrimos Salt Lake, Utah, Davis, Weber, Tooele y zonas cercanas."
+          }
+        ]
+      }
+    }
+  }
+}

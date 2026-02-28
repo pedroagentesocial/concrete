@@ -1,0 +1,66 @@
+---
+import Button from "./Button";
+import { serviceArea } from "../data/serviceArea";
+import { t, type Lang } from "../i18n";
+const { lang } = Astro.props as { lang: Lang };
+const year = new Date().getFullYear();
+const navLinks = [
+  { href: `/${lang}/`, label: t(lang, "common.nav.home") },
+  { href: `/${lang}/products`, label: t(lang, "common.nav.products") },
+  { href: `/${lang}/services`, label: t(lang, "common.nav.services") },
+  { href: `/${lang}/projects`, label: t(lang, "common.nav.projects") },
+  { href: `/${lang}/resources`, label: t(lang, "common.nav.resources") },
+  { href: `/${lang}/about`, label: t(lang, "common.nav.about") },
+  { href: `/${lang}/contact`, label: t(lang, "common.nav.contact") }
+];
+const areaNames = serviceArea.areas.slice(0, 5).map((key) => t(lang, key));
+---
+<footer class="border-t border-muted bg-surface">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14">
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="space-y-3">
+        <p class="text-lg font-semibold text-text">{String(t(lang, "footer.brand.name"))}</p>
+        <p class="max-w-3xl text-sm text-muted">{t(lang, "footer.brand.value")}</p>
+        <p class="text-xs text-muted">{t(lang, "footer.brand.serviceArea")}</p>
+      </div>
+      <nav aria-label="Footer navigation" class="space-y-3">
+        <p class="text-sm font-semibold text-text">{t(lang, "footer.navHeader")}</p>
+        <ul class="space-y-2 text-sm">
+          {navLinks.map((l) => (
+            <li><a class="rounded-sm text-text hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg" href={l.href}>{String(l.label)}</a></li>
+          ))}
+        </ul>
+      </nav>
+      <div class="space-y-3">
+        <p class="text-sm font-semibold text-text">{t(lang, "footer.contactHeader")}</p>
+        <ul class="space-y-2 text-sm">
+          <li><span class="font-semibold text-text">{t(lang, "footer.labels.phone")}:</span> <span class="text-muted">{t(lang, "home.contact.phone")}</span></li>
+          <li><span class="font-semibold text-text">{t(lang, "footer.labels.email")}:</span> <span class="text-muted">{t(lang, "home.contact.email")}</span></li>
+          <li><span class="font-semibold text-text">{t(lang, "footer.labels.hours")}:</span> <span class="text-muted">{t(lang, "home.contact.hours")}</span></li>
+        </ul>
+        <div class="pt-1">
+          <Button client:load onClick={() => (window.location.href = `/${lang}/contact`)} variant="primary">
+            {t(lang, "home.hero.primaryCta") as any}
+          </Button>
+        </div>
+      </div>
+      <div class="space-y-3">
+        <p class="text-sm font-semibold text-text">{t(lang, "home.serviceArea.labels.serviceAreas")}</p>
+        <ul class="space-y-2 text-sm text-muted">
+          {areaNames.map((name) => (
+            <li>{String(name)}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-muted pt-6">
+      <div class="flex flex-col items-start justify-between gap-3 text-xs text-muted sm:flex-row sm:items-center">
+        <p>{String(t(lang, "footer.copyright", { year }))}</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="rounded-sm hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg">{t(lang, "footer.labels.privacy")}</a>
+          <a href="#" class="rounded-sm hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg">{t(lang, "footer.labels.terms")}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

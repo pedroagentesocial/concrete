@@ -1,0 +1,17 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import ContactForm from "./ContactForm";
+import { t, type Lang } from "../i18n";
+
+const { lang } = Astro.props as { lang: Lang };
+---
+
+<section class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+    <SectionHeader title={t(lang, "pages.contact.form.title")} subtitle={t(lang, "pages.contact.form.subtitle")} align="center" />
+    <div class="mx-auto max-w-4xl">
+      <ContactForm client:load lang={lang} />
+      <p class="mt-4 text-center text-sm text-muted">{t(lang, "pages.contact.form.note")}</p>
+    </div>
+  </div>
+</section>

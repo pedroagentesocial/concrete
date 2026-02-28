@@ -1,0 +1,23 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import Button from "./Button";
+import { contactInfo } from "../data/contactInfo";
+import { t, type Lang } from "../i18n";
+
+const { lang } = Astro.props as { lang: Lang };
+---
+
+<section class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+    <SectionHeader title={t(lang, "pages.about.hero.title")} subtitle={t(lang, "pages.about.hero.subtitle")} align="center" />
+    <div class="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+      <Button client:load onClick={() => (window.location.href = contactInfo.phoneHref)} variant="primary" className="h-12 px-6">
+        {t(lang, "pages.about.hero.primaryCta") as any}
+      </Button>
+      <Button client:load onClick={() => (window.location.href = `/${lang}/products`)} variant="secondary" className="h-12 px-6">
+        {t(lang, "pages.about.hero.secondaryCta") as any}
+      </Button>
+    </div>
+    <p class="mt-4 text-center text-sm text-muted">{t(lang, "pages.about.hero.trustLine")}</p>
+  </div>
+</section>

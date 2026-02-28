@@ -1,0 +1,40 @@
+---
+import SectionHeader from "./SectionHeader.astro";
+import { capabilities } from "../data/capabilities";
+import { t, type Lang } from "../i18n";
+
+const { lang } = Astro.props as { lang: Lang };
+const items = capabilities.map((item) => ({
+  id: item.id,
+  title: t(lang, item.titleKey),
+  description: t(lang, item.bodyKey),
+  iconKey: item.iconKey
+}));
+const icons = {
+  delivery:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M3 7h18M5 7v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7"/><path d="M8 3h8v4H8z"/></svg>',
+  readyMix:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M3 12h18"/><path d="M6 6h12v12H6z"/></svg>',
+  aggregates:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M4 20h16"/><path d="M6 16l6-12 6 12"/></svg>',
+  coordination:
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M3 12h6l3 8 3-8h6"/><path d="M6 12l3-8h6l3 8"/></svg>'
+};
+---
+
+<section class="bg-white">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+    <SectionHeader title={t(lang, "pages.about.capabilities.title")} subtitle={t(lang, "pages.about.capabilities.subtitle")} align="center" />
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      {items.map((item) => (
+        <article class="rounded-2xl border border-muted bg-surface p-6">
+          <div class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-muted bg-white text-brand">
+            <span set:html={icons[item.iconKey]} />
+          </div>
+          <h3 class="mt-4 text-base font-semibold text-text">{item.title}</h3>
+          <p class="mt-2 text-sm text-text/80">{item.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

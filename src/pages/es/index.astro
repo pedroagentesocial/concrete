@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TestimonialsMarquee from "../../components/TestimonialsMarquee";
+import ProjectGrid from "../../components/ProjectGrid";
+import HeroVideoSlider from "../../components/HeroVideoSlider";
+import ContactCtaSection from "../../components/ContactCtaSection.astro";
+import { t } from "../../i18n";
+import SectionHeader from "../../components/SectionHeader.astro";
+import ServicesShowcase from "../../components/ServicesShowcase.astro";
+import WhyUsShowcase from "../../components/WhyUsShowcase.astro";
+import ProductsPerformanceShowcase from "../../components/ProductsPerformanceShowcase.astro";
+import ServiceAreaShowcase from "../../components/ServiceAreaShowcase.astro";
+
+const lang = "es";
+const canonical = new URL(`/es/`, Astro.url).toString();
+const alternateUrl = new URL(`/en/`, Astro.url).toString();
+---
+
+<BaseLayout
+  title={t(lang, "meta.title")}
+  description={t(lang, "meta.description")}
+  lang={lang}
+  canonical={canonical}
+  alternateLang="en"
+  alternateUrl={alternateUrl}
+>
+  <section>
+    <HeroVideoSlider client:load lang={lang} />
+  </section>
+
+  <ProductsPerformanceShowcase lang={lang} />
+
+  <section class="bg-white py-16 sm:py-20">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div>
+        <SectionHeader title={t(lang, "home.testimonials.title")} subtitle={t(lang, "home.testimonials.subtitle")} align="center" />
+      </div>
+    </div>
+    <div class="mt-6 w-screen relative left-1/2 right-1/2 -mx-[50vw]">
+      <TestimonialsMarquee client:load lang={lang} />
+    </div>
+    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <p class="mt-3 text-xs text-muted">{t(lang, "home.testimonials.disclaimer")}</p>
+    </div>
+  </section>
+
+  <ServicesShowcase lang={lang} />
+
+  <WhyUsShowcase lang={lang} />
+
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+    <SectionHeader title={t(lang, "home.projects.title")} align="center" />
+    <div class="mt-6">
+      <ProjectGrid client:load lang={lang} />
+    </div>
+  </section>
+
+  <ServiceAreaShowcase lang={lang} />
+
+  <ContactCtaSection lang={lang} />
+</BaseLayout>

@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Reveal from "../../components/Reveal";
+import SectionHeader from "../../components/SectionHeader.astro";
+import ProjectGrid from "../../components/ProjectGrid";
+import { t } from "../../i18n";
+
+const lang = "es";
+const canonical = new URL(`/es/projects`, Astro.url).toString();
+const alternateUrl = new URL(`/en/projects`, Astro.url).toString();
+---
+
+<BaseLayout
+  title={t(lang, "pages.projects.title")}
+  description={t(lang, "pages.projects.intro")}
+  lang={lang}
+  canonical={canonical}
+  alternateLang="en"
+  alternateUrl={alternateUrl}
+>
+  <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+    <SectionHeader title={t(lang, "pages.projects.title")} subtitle={t(lang, "pages.projects.intro")} align="center" />
+    <div class="mt-8">
+      <ProjectGrid client:load lang={lang} />
+    </div>
+  </section>
+</BaseLayout>

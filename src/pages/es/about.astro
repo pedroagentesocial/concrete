@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import AboutHero from "../../components/AboutHero.astro";
+import Timeline from "../../components/Timeline.astro";
+import CapabilitiesGrid from "../../components/CapabilitiesGrid.astro";
+import ProcessSteps from "../../components/ProcessSteps.astro";
+import SafetyQualityPanel from "../../components/SafetyQualityPanel.astro";
+import SustainabilityPanel from "../../components/SustainabilityPanel.astro";
+import ContactCtaSection from "../../components/ContactCtaSection.astro";
+import Reveal from "../../components/Reveal";
+import SectionHeader from "../../components/SectionHeader.astro";
+import { t } from "../../i18n";
+
+const lang = "es";
+const canonical = new URL(`/es/about`, Astro.url).toString();
+const alternateUrl = new URL(`/en/about`, Astro.url).toString();
+---
+
+<BaseLayout
+  title={t(lang, "pages.about.title")}
+  description={t(lang, "pages.about.intro")}
+  lang={lang}
+  canonical={canonical}
+  alternateLang="en"
+  alternateUrl={alternateUrl}
+>
+  <Reveal client:load delayMs={0}>
+    <AboutHero lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={80}>
+    <Timeline lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={160}>
+    <CapabilitiesGrid lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={240}>
+    <ProcessSteps lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={320}>
+    <SafetyQualityPanel lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={400}>
+    <SustainabilityPanel lang={lang} />
+  </Reveal>
+  <Reveal client:load delayMs={480}>
+    <section class="bg-white">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+        <SectionHeader title={t(lang, "pages.about.serviceArea.title")} subtitle={t(lang, "pages.about.serviceArea.subtitle")} align="center" />
+        <div class="grid gap-6 lg:gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div class="rounded-2xl overflow-hidden border border-muted bg-white">
+            <picture>
+              <source srcset="/images/about-1.jpg" type="image/jpeg" />
+              <img src="/images/about-1.jpg" alt={t(lang, "pages.about.images.about1Alt")} loading="lazy" class="h-full w-full object-cover" />
+            </picture>
+          </div>
+          <div class="rounded-2xl border border-muted bg-white p-6 sm:p-8">
+            <p class="text-xs uppercase tracking-[0.24em] text-muted">{t(lang, "pages.about.serviceArea.hqLabel")}</p>
+            <h3 class="mt-2 text-2xl font-semibold text-text">{t(lang, "pages.about.serviceArea.hqName")}</h3>
+            <p class="mt-2 text-sm text-text/80">{t(lang, "pages.about.serviceArea.hqAddress")}</p>
+            <div class="mt-6 border-t border-muted pt-4">
+              <p class="text-xs uppercase tracking-[0.24em] text-muted">{t(lang, "pages.about.serviceArea.coverageLabel")}</p>
+              <p class="mt-2 text-sm text-text/80">{t(lang, "pages.about.serviceArea.coverageNote")}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </Reveal>
+  <Reveal client:load delayMs={560}>
+    <ContactCtaSection lang={lang} />
+  </Reveal>
+</BaseLayout>
