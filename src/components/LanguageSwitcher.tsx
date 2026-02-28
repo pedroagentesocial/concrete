@@ -1,7 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import { getLangFromPath, t, type Lang } from "../i18n";
-import usFlagUrl from "../assets/flags/us.svg?url";
-import esLatamFlagUrl from "../assets/flags/es-latam.svg?url";
 
 const swapPrefix = (pathname: string, to: Lang) => {
   const parts = pathname.split("/");
@@ -40,12 +38,12 @@ const LanguageSwitcher = () => {
         aria-label={labelEn}
         tabIndex={lang === "en" ? 0 : -1}
         onClick={() => goTo("en")}
-        className={`grid place-items-center h-9 w-9 rounded-xl transition-all duration-200 ease-out hover:bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg ${
+        className={`grid place-items-center h-9 w-10 rounded-xl text-[11px] font-semibold uppercase tracking-[0.24em] transition-all duration-200 ease-out hover:bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg ${
           lang === "en" ? "bg-surface ring-1 ring-brand" : "bg-transparent"
         }`}
         title={labelEn}
       >
-        <img src={usFlagUrl} alt="" className="h-5 w-5 rounded-sm" />
+        EN
       </button>
       <button
         type="button"
@@ -53,12 +51,12 @@ const LanguageSwitcher = () => {
         aria-label={labelEs}
         tabIndex={lang === "es" ? 0 : -1}
         onClick={() => goTo("es")}
-        className={`grid place-items-center h-9 w-9 rounded-xl transition-all duration-200 ease-out hover:bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg ${
+        className={`grid place-items-center h-9 w-10 rounded-xl text-[11px] font-semibold uppercase tracking-[0.24em] transition-all duration-200 ease-out hover:bg-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-bg ${
           lang === "es" ? "bg-surface ring-1 ring-brand" : "bg-transparent"
         }`}
         title={labelEs}
       >
-        <img src={esLatamFlagUrl} alt="" className="h-5 w-5 rounded-sm" />
+        ES
       </button>
     </div>
   );
