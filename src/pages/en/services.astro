@@ -25,11 +25,13 @@ const alternateUrl = new URL(`/es/services`, Astro.url).toString();
     <div class="space-y-12">
       {services.map((svc, idx) => {
         const bullets = svc.bulletsKey ? (t(lang, svc.bulletsKey) as any[]) : null;
-        const imageSrcs = [
-          `${import.meta.env.BASE_URL}images/services-1.jpg`,
-          `${import.meta.env.BASE_URL}images/services-2.jpg`
-        ];
-        const imageSrc = imageSrcs[idx % imageSrcs.length];
+        const imageMap = {
+          delivery: `${import.meta.env.BASE_URL}images/delivery.jpg`,
+          mixDesign: `${import.meta.env.BASE_URL}images/mix.jpg`,
+          onSiteSupport: `${import.meta.env.BASE_URL}images/on-site.jpg`,
+          quality: `${import.meta.env.BASE_URL}images/testing.jpg`
+        };
+        const imageSrc = imageMap[svc.id as keyof typeof imageMap] ?? `${import.meta.env.BASE_URL}images/services-1.jpg`;
         const altKey =
           svc.id === "delivery"
             ? "pages.servicesPage.images.deliveryAlt"
