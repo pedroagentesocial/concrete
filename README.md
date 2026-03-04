@@ -1,4 +1,4 @@
-# Wasatch Cement & Concrete Supply
+# Lira Builders
 
 Bilingual (English and Spanish) marketing website built with Astro, React Islands, Tailwind CSS, and TypeScript. The site is optimized for SEO, accessibility, and performance with a pure white background, global color tokens, and scroll reveal animations that respect reduced-motion preferences.
 

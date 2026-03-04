@@ -7,7 +7,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: process.env.SITE_URL || 'https://wasatchcement.com',
+  site: process.env.SITE_URL || 'https://lirabuilders.com',
   base: process.env.BASE_PATH || '/',
   integrations: [react(), sitemap()],
 

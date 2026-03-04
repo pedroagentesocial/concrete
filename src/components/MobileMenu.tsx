@@ -133,8 +133,8 @@ export default function MobileMenu({ lang }: MobileMenuProps) {
           >
             <div className="flex items-center justify-between border-b border-muted px-4 py-3">
               <a href={`/${lang}/`} className="flex flex-col">
-                <span className="text-xs uppercase tracking-[0.2em] text-muted">Wasatch</span>
-                <span className="text-base font-semibold text-text">Wasatch Cement & Concrete Supply</span>
+                <span className="text-xs uppercase tracking-[0.2em] text-muted">Lira</span>
+                <span className="text-base font-semibold text-text">Lira Builders</span>
               </a>
               <div className="flex items-center gap-2">
                 <LanguageSwitcher />

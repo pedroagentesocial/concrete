@@ -23,7 +23,7 @@ export const serviceArea: ServiceArea = {
     phoneDisplay: "home.serviceArea.hq.phone",
     phoneHref: "tel:+18015550148",
     emailDisplay: "home.serviceArea.hq.email",
-    emailHref: "mailto:sales@wasatchcement.com",
+    emailHref: "mailto:sales@lirabuilders.com",
     hoursKey: "home.serviceArea.hours.standard",
     mapHref: "https://maps.google.com/?q=1250%20N%20200%20W%2C%20Salt%20Lake%20City%2C%20UT",
     imageSrc: withBase("/images/utah.jpg"),

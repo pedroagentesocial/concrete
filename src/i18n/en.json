@@ -27,12 +27,12 @@
     "close": "Close",
     "footer": {
       "tagline": "Concrete supply partner for Utah’s builders.",
-      "legal": "© 2026 Wasatch Cement & Concrete Supply. All rights reserved."
+      "legal": "© 2026 Lira Builders. All rights reserved."
     }
   },
   "meta": {
     "title": "Utah Concrete Supply Partner",
-    "description": "Wasatch Cement & Concrete Supply delivers dependable mixes, on-time logistics, and jobsite-ready expertise across Utah."
+    "description": "Lira Builders delivers dependable mixes, on-time logistics, and jobsite-ready expertise across Utah."
   },
   "home": {
     "heroSlides": {
@@ -208,7 +208,7 @@
         "serviceArea": "Central dispatch and same-day delivery coordination.",
         "address": "1250 N 200 W, Salt Lake City, UT",
         "phone": "(801) 555-0148",
-        "email": "sales@wasatchcement.com"
+        "email": "sales@lirabuilders.com"
       },
       "areas": {
         "saltLakeCity": "Salt Lake City",
@@ -242,7 +242,7 @@
     },
     "hero": {
       "title": "Concrete you can schedule with confidence across Utah.",
-      "subtitle": "Wasatch Cement & Concrete Supply partners with builders, contractors, and municipalities to deliver consistent mixes, responsive dispatch, and on-site support.",
+      "subtitle": "Lira Builders partners with builders, contractors, and municipalities to deliver consistent mixes, responsive dispatch, and on-site support.",
       "primaryCta": "Request a quote",
       "secondaryCta": "View services",
       "trustLine": "Batching, logistics, and jobsite coordination built for Utah conditions."
@@ -354,7 +354,7 @@
       "disclaimer": "Sample testimonials for demo purposes.",
       "items": [
         {
-          "quote": "Wasatch keeps our pours on schedule with real-time updates and consistent strengths.",
+          "quote": "Lira keeps our pours on schedule with real-time updates and consistent strengths.",
           "name": "Jordan Blake",
           "role": "Project Superintendent"
         },
@@ -369,7 +369,7 @@
       "title": "Talk to a Utah concrete specialist",
       "address": "1250 N 200 W, Salt Lake City, UT",
       "phone": "(801) 555-0148",
-      "email": "dispatch@wasatchcement.com",
+      "email": "dispatch@lirabuilders.com",
       "hours": "Mon–Sat · 6:00 AM – 6:00 PM",
       "note": "Emergency pours and weekend scheduling available.",
       "cta": "Get directions"
@@ -386,7 +386,7 @@
       },
       "placeholders": {
         "name": "Jordan Blake",
-        "company": "Wasatch Builders",
+        "company": "Lira Builders",
         "email": "jordan@example.com",
         "phone": "(801) 555-0123",
         "service": "Ready-mix concrete",
@@ -400,7 +400,7 @@
   },
   "footer": {
     "brand": {
-      "name": "Wasatch Cement & Concrete Supply",
+      "name": "Lira Builders",
       "value": "Dependable concrete supply and jobsite-ready support.",
       "serviceArea": "Serving Utah"
     },
@@ -416,7 +416,7 @@
       "privacy": "Privacy",
       "terms": "Terms"
     },
-    "copyright": "© {{year}} Wasatch Cement & Concrete Supply. All rights reserved."
+    "copyright": "© {{year}} Lira Builders. All rights reserved."
   },
   "pages": {
     "products": {
@@ -577,7 +577,7 @@
       "intro": "Local team focused on reliability, communication, and safety.",
       "hero": {
         "title": "Built to support Utah pours with clarity and consistency.",
-        "subtitle": "Wasatch Cement & Concrete Supply partners with contractors and builders to align specs, scheduling, and jobsite coordination.",
+        "subtitle": "Lira Builders partners with contractors and builders to align specs, scheduling, and jobsite coordination.",
         "primaryCta": "Call dispatch",
         "secondaryCta": "View products",
         "trustLine": "Dispatch support, spec guidance, and jobsite-ready coordination."

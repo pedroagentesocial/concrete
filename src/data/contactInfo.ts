@@ -29,8 +29,8 @@ const xIcon =
 export const contactInfo: ContactInfo = {
   phoneDisplay: "(801) 555-0199",
   phoneHref: "tel:+18015550199",
-  emailDisplay: "sales@wasatchcement.com",
-  emailHref: "mailto:sales@wasatchcement.com",
+  emailDisplay: "sales@lirabuilders.com",
+  emailHref: "mailto:sales@lirabuilders.com",
   addressDisplay: "1234 Industrial Way, Salt Lake City, UT 84101",
   mapHref: "https://maps.google.com/?q=1234%20Industrial%20Way%2C%20Salt%20Lake%20City%2C%20UT%2084101",
   social: [

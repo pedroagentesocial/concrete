@@ -27,12 +27,12 @@
     "close": "Cerrar",
     "footer": {
       "tagline": "Socio de suministro de concreto para los constructores de Utah.",
-      "legal": "© 2026 Wasatch Cement & Concrete Supply. Todos los derechos reservados."
+      "legal": "© 2026 Lira Builders. Todos los derechos reservados."
     }
   },
   "meta": {
     "title": "Proveedor de concreto en Utah",
-    "description": "Wasatch Cement & Concrete Supply ofrece mezclas confiables, logística puntual y apoyo en obra en todo Utah."
+    "description": "Lira Builders ofrece mezclas confiables, logística puntual y apoyo en obra en todo Utah."
   },
   "home": {
     "heroSlides": {
@@ -208,7 +208,7 @@
         "serviceArea": "Despacho central y coordinación de entregas el mismo día.",
         "address": "1250 N 200 W, Salt Lake City, UT",
         "phone": "(801) 555-0148",
-        "email": "sales@wasatchcement.com"
+        "email": "sales@lirabuilders.com"
       },
       "areas": {
         "saltLakeCity": "Salt Lake City",
@@ -242,7 +242,7 @@
     },
     "hero": {
       "title": "Concreto que puedes programar con confianza en Utah.",
-      "subtitle": "Wasatch Cement & Concrete Supply apoya a constructoras, contratistas y municipios con mezclas consistentes, despacho ágil y soporte en obra.",
+      "subtitle": "Lira Builders apoya a constructoras, contratistas y municipios con mezclas consistentes, despacho ágil y soporte en obra.",
       "primaryCta": "Solicitar cotización",
       "secondaryCta": "Ver servicios",
       "trustLine": "Dosificación, logística y coordinación en obra pensadas para Utah."
@@ -354,7 +354,7 @@
       "disclaimer": "Testimonios de ejemplo para fines de demostración.",
       "items": [
         {
-          "quote": "Wasatch mantiene nuestros colados en tiempo con actualizaciones y resistencias consistentes.",
+          "quote": "Lira mantiene nuestros colados en tiempo con actualizaciones y resistencias consistentes.",
           "name": "Jordan Blake",
           "role": "Superintendente de obra"
         },
@@ -369,7 +369,7 @@
       "title": "Habla con un especialista en concreto de Utah",
       "address": "1250 N 200 W, Salt Lake City, UT",
       "phone": "(801) 555-0148",
-      "email": "dispatch@wasatchcement.com",
+      "email": "dispatch@lirabuilders.com",
       "hours": "Lun–Sáb · 6:00 AM – 6:00 PM",
       "note": "Colados de emergencia y fines de semana disponibles.",
       "cta": "Cómo llegar"
@@ -386,7 +386,7 @@
       },
       "placeholders": {
         "name": "Jordan Blake",
-        "company": "Wasatch Builders",
+        "company": "Lira Builders",
         "email": "jordan@example.com",
         "phone": "(801) 555-0123",
         "service": "Concreto premezclado",
@@ -400,7 +400,7 @@
   },
   "footer": {
     "brand": {
-      "name": "Wasatch Cement & Concrete Supply",
+      "name": "Lira Builders",
       "value": "Suministro confiable de concreto y soporte en obra.",
       "serviceArea": "Servicio en Utah"
     },
@@ -416,7 +416,7 @@
       "privacy": "Privacidad",
       "terms": "Términos"
     },
-    "copyright": "© {{year}} Wasatch Cement & Concrete Supply. Todos los derechos reservados."
+    "copyright": "© {{year}} Lira Builders. Todos los derechos reservados."
   },
   "pages": {
     "products": {
@@ -577,7 +577,7 @@
       "intro": "Equipo local enfocado en confiabilidad, comunicación y seguridad.",
       "hero": {
         "title": "Apoyo confiable para colados en Utah con claridad y consistencia.",
-        "subtitle": "Wasatch Cement & Concrete Supply colabora con contratistas y constructoras para alinear especificaciones, agenda y coordinación en obra.",
+        "subtitle": "Lira Builders colabora con contratistas y constructoras para alinear especificaciones, agenda y coordinación en obra.",
         "primaryCta": "Llamar a despacho",
         "secondaryCta": "Ver productos",
         "trustLine": "Soporte de despacho, guía por especificación y coordinación en obra."
